@@ -1,0 +1,9 @@
+
+# Append this to the end of ~/.bashrc and ~/.profile.  Only one of
+# those runs, so this will ensure that our stuff gets run no matter
+# what.
+
+# if there is a separate .bash_aliases file, run it
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi

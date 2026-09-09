@@ -1,0 +1,66 @@
+stokes setup instructions
+=========================
+
+• ssh into stokes
+• we're going to create an anaconda environment within stokes that mimics the environment on your computer
+
+cd
+module load anaconda
+srun --pty bash
+conda create -n ast4762 python=3.14.7
+conda init bash
+source ~/.bashrc
+conda activate ast4762
+conda install numpy scipy matplotlib pandas
+
+• thats the installations
+
+• exit stokes and return to your own computer
+• now I want to run my homework script on stokes
+• lets say your homework folder is named hw2 and the .py file is test.py
+• open the 'slurmformat.slurm' file in textedit or a similar text editor
+• mine looks like this:
+
+--------------------------------------------------------
+#!/bin/bash
+#SBATCH --job-name=ast4762
+#SBATCH --output=slurm-%j.out
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=4G
+
+# edit this line with your username and python script
+/home/ca116845/.conda/envs/ast4762/bin/python3 test.py
+--------------------------------------------------------
+
+• edit the line where it says to edit, changing my NID with yours
+• whenever you submit to stokes, you only run a .slurm file, so you'll copy this file into every homework directory, and for each homework you just edit the script its running
+• right now its running 'test.py', which Ill have you run as a test
+• save this file into your current homework folder
+
+• OK, so for me I have test.py and slurmformat.slurm in my hw2 folder
+• BEFORE logging into Stokes, ill copy this folder over to my stokes computer
+
+scp -r /Users/cc/Documents/university/AST4762/homework/hw2 ca116845@stokes.ist.ucf.edu:~/hw2
+
+• now Ill login to stokes as usual, ill omit the ssh command here
+• in stokes ill cd into my hw2 directory that I just made and run the slurm file
+
+cd hw2
+sbatch slurmformat.slurm
+
+• it should say the job has been submitted
+• any plots will be saved
+• if you have print statements that you normally see in your terminal, heres how to see them
+• type ls, youll notice a new file with 'slurm-jobID.out'
+• you can have it print out to your terminal by typing, while in your hw2 directory, replacing the slurm_id with your actual job-ID
+
+cat slurm-jobID.out
+
+• this should output the message:
+
+ 
+This code executed correctly
+
+ 
+• if it didn't execute correctly, come talk to us.

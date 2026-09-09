@@ -1,0 +1,224 @@
+Rishant Prakash
+Log for AST 5765, Fall 2026
+*****IN: Wed Aug 26 15:25:14 EDT 2026
+Started Homework 0.
+Opened TextEdit and created my AST 5765 work log.
+
+Name: Rishant Prakash
+
+Username: prakash
+
+What astronomy classes have you taken?
+My academic background is primarily in geological sciences, Earth science, planetary science, and isotope geochemistry.
+
+Are you generally comfortable with calculus and physics?
+I have experience with calculus and physics through my Earth and planetary science coursework, although my background is stronger in geological sciences than in physics. I would like to strengthen my physics and quantitative background through this course.
+
+Have you ever programmed a computer?
+Yes.
+
+In what language(s)?
+Python, Java (10 years ago), C++ for a class Numerical Methods (at Arizona State University)
+
+Have you taken a programming class, and if so which?
+I have used programming for scientific work (Plotting, regression, Chi^2 for data analysis fro my MS thesis on three-dimensional supernova modeling output files but have not taken a dedicated programming course.
+
+Have you taken statistics or probability?
+No.
+
+Will you be attending the DPS conference this year, or will you be away otherwise?
+I'm a first year PhD student, currently I do not have anything to present.
+
+Why are you taking this course?
+I am taking this course to develop stronger skills in astronomical data analysis, scientific programming, statistics, and computational methods that I can apply to my PhD research in planetary science.
+
+Are there particular topics you hope to learn?
+I would like to improve my Python-based scientific data analysis, statistical analysis, visualization, uncertainty analysis, model-data comparison, and methods for working with large astronomical and planetary-science datasets.
+
+If you have programmed outside of a course before, please briefly describe:
+I have used Python for scientific data analysis, plotting, statistical comparisons, and working with research datasets (million data points).
+
+If you have worked with scientific data before, briefly describe your experience:
+I have worked extensively with laboratory and computational scientific datasets in isotope geochemistry and planetary science. My research has included Cr and Ti isotope measurements of presolar oxide grains, comparison of measured isotope ratios with three-dimensional core-collapse supernova model outputs, statistical model-data matching, and analysis of electron-microprobe and compositional data from synthetic Ti-CMAS glasses that I build using high-T gas mixing furnace.
+
+Please describe any projects in astronomy, including involvement in amateur groups, owning a telescope, research, etc.:
+My research focuses on cosmochemistry and planetary science. I have studied presolar oxide nanograins and compared their Cr-Ti isotopic compositions with three-dimensional core-collapse supernova models to investigate their stellar origins. I also work on developing synthetic Ti-CMAS glass standards for in situ titanium-isotope measurements of calcium-aluminum-rich inclusions (CAIs). My PhD research will involve isotope geochemistry of early Solar System materials.
+
+
+
+
+How I will complete and submit the homework:
+
+1. I will create a folder named hw0_rishant on my Desktop.
+
+2. After completing my log file, I will copy
+0-ast5765-rishant.log
+from my Desktop into the hw0_rishant folder.
+
+3. I will zip the hw0_rishant folder by right-clicking the folder and selecting "Compress hw0_rishant". This will create hw0_rishant.zip.
+
+4. I will log in to Webcourses, open the Homework 0 assignment for AST 5765, upload hw0_rishant.zip, and submit the assignment. (Although, I've not been registered in the coursework yet, so probably I shall be emailing the file to Prof Joseph Harrington and TA Cameron Collyer.
+
+
+*****OUT: Wed Aug 26 [Wed Aug 26 15:36:05 EDT 2026]
+
+
+*****IN: Wed Sep 09 00:16:56 EDT 2026
+
+AI-assisted setup session. Codex inspected the supplied syllabus, HW1, HW2,
+all installation/log/format/Git/Stokes handouts, and lecture resources.
+This entry records actions performed by Codex at the student's request; it is
+not a claim that the student independently performed or learned each step.
+
+Naming: The original HW0 log explicitly records Username: prakash.
+The canonical folder names now use prakash and graduate course number ast5765.
+The original 0-ast5765-rishant.log and its ZIP remain unchanged.
+The entire original log is retained above this appended entry.
+
+Created ast5765/homework/hw1_prakash, homework/hw2_prakash, handin,
+literature, lectures, handouts and tools using mkdir -p from the shell.
+Copied course PDFs and lecture resources with metadata preservation.
+No earlier homework archives were changed.
+
+Requirements read: HW1 due August 31, 2026 at 2:30 pm; HW2 due
+September 9, 2026 at 2:30 pm. HW1 specifically requests ZIP; HW2 requests
+a Stokes-created tar.gz. The syllabus gives tar.gz as the general default.
+HW2 explicitly prohibits AI use; no HW2 solutions were authored.
+The syllabus requires specific disclosure of AI assistance.
+
+Environment inspection: macOS 26.6.2, arm64; Apple Command Line Tools
+at /Library/Developer/CommandLineTools; git 2.39.5 (Apple Git-154).
+The default shell python points to ~/miniconda3/bin/python, which has
+Python 3.14.7 but none of the required scientific packages.
+The existing /opt/anaconda3/bin/python has Python 3.14.7, NumPy 2.4.6,
+SciPy 1.18.0, Matplotlib 3.11.0, pandas 3.0.5, IPython 9.15.0,
+Notebook 7.5.7, JupyterLab 4.5.9, nbconvert 7.17.1, ipykernel 6.31.0,
+Spyder 6.1.5 and Astropy 8.0.1. No reinstall was necessary.
+A Matplotlib cache permission warning occurred during inspection; subsequent
+checks use a writable cache under audit/runtime.
+
+Tool limitation: native Terminal UI control was denied by the computer-use
+tool. The Codex terminal panel was requested; shell execution is available.
+No fake screenshots were generated. Stokes NID and GitHub repository/email
+were requested because none were provided or configured in this workspace.
+
+Source: UCF ARCC, SSH from Linux/Mac, accessed September 9, 2026,
+https://arcc.ist.ucf.edu/docs/access/linux/ . It requires an ARCC account,
+UCF NID, SSH and UCF network/VPN. The supplied pydatatut reading folder
+is absent from the two supplied workspace roots.
+
+
+Update Wed Sep 09 00:27:02 EDT 2026
+The student replied: "Instructor has since allowed AI; I will provide the
+updated instruction." Based on this reported updated permission, Codex
+proceeded with HW2 and included explicit AI disclosure in the source.
+The original PDF prohibition remains in the preserved source documents.
+
+HW1: initialized a new local Git repository with git init -b master.
+Set repository-local user.name to Rishant Prakash. The student signed into
+GitHub in the browser as rishantp22 and created AST-5765_Prakash.
+Configured origin with git remote add origin
+https://github.com/rishantp22/AST-5765_Prakash.git .
+At this point the online repository is public and empty. No files were pushed.
+The commit email and command-line authentication are still pending.
+
+Jupyter launch initially failed because the sandbox disallowed opening a
+localhost socket. After OS execution approval, started existing JupyterLab
+on localhost port 8889 rooted at ast5765. Kept normal token authentication.
+Ran the HW1 verification notebook in the browser and saved actual output.
+Saved an unedited browser screenshot using the computer-use screenshot
+function and wrote its returned PNG bytes as
+homework/hw1_prakash/hw1_prakash_problem2_python.png.
+The screenshot shows Python 3.14.7, /opt/anaconda3/bin/python,
+all package versions, and successful imports in the running notebook.
+
+HW2: authored hw2_prakash.py with vectorized NumPy operations, no loops
+or comprehensions. Cast x from int64 to float64 under the same variable
+name before scaling in place; true int64 storage cannot hold fractional
+radians. The float cast allocates storage, so the comment states this
+explicitly rather than claiming physical integer storage was retained.
+
+Ran: source ast5765/tools/course_shell.sh
+     python ast5765/homework/hw2_prakash/hw2_prakash.py
+Saved stdout in hw2_prakash_local_run.txt. Results follow:
+
+Problem 1
+Rishant Prakash | AST 5765C | Homework 2 | 2026-09-09
+Main file: hw2_prakash.py in homework/hw2_prakash/.
+See the work log for setup, execution and submission status.
+
+Problem 2
+2a1. Number of elements, including both endpoints: 1001
+2a2. Integer array dtype: int64
+2a2. Minimum: 0 Maximum: 1000
+2b1. x was promoted to float64 and rescaled in place, in radians.
+2b2. Minimum: 0.0 Maximum: 6.283185307179586
+2c. y = sin(x) has 1001 dimensionless elements.
+2d. y[234] = 0.994951016981300
+Index 234 denotes the 235th element; the 234th is index 233.
+
+Problem 3
+3a. Plotted y against x with labeled axes and units.
+3b. Saved with Matplotlib: hw2_prakash_problem3_sine.png
+
+Problem 4
+4a1. Original ramp: 101 evenly spaced elements;
+minimum = -1.0 ; maximum = 1.0
+spacing = 0.02
+4a2. Clipped ramp minimum = -0.5 ; maximum = 0.5
+4b. Saved both curves in one Matplotlib figure: hw2_prakash_problem4_ramp.pdf
+
+Problem 5
+Astropy - https://www.astropy.org/
+Astropy is a free, open-source Python package that supplies common building
+blocks for astronomical analysis. It can read and write FITS files, attach
+physical units to quantities, transform celestial coordinates, and handle
+astronomical times and tables. These tools help keep an analysis consistent
+when data arrive with different units or coordinate conventions. For example,
+an imaging workflow can read a FITS image and use its coordinate information
+to relate image positions to positions on the sky. It is developed by the
+Astropy community. Source: Astropy Developers (2026), Astropy 8.0.1 user
+documentation, https://docs.astropy.org/en/stable/ (accessed 2026-09-09).
+
+Photutils - https://photutils.readthedocs.io/en/stable/
+Photutils is a free, open-source Python package for finding astronomical
+sources and measuring their light in images. Its tools include estimating
+the background, locating sources, measuring flux inside apertures, and
+fitting point-spread-function models. For example, aperture photometry can
+measure a star's signal after accounting for the surrounding background;
+PSF fitting provides another way to measure sources when their images
+overlap. Photutils works with the Astropy ecosystem and is maintained by
+the Photutils developers. Source: Photutils Developers (2026), Photutils
+3.0.0 documentation, dated 2026-04-17,
+https://photutils.readthedocs.io/en/stable/ (accessed 2026-09-09).
+
+Problem 6
+This run completed the numerical work and wrote both plot files.
+The work log records whether this run was local or on Stokes.
+Git, transfer and Stokes evidence must be checked in that log.
+
+Problem 7
+Upload the final Stokes-created tar.gz to Webcourses after verifying
+all required files. Running this program does not submit homework.
+
+
+Validation: executed a fresh copy containing only the main Python file
+from an unrelated working directory. Checked exact point counts, endpoint
+values, sine cardinal points, element 234 against math.sin, ramp spacing,
+clipping bounds/interior invariance and independent original-ramp storage.
+Checked syntax-tree absence of loops and comprehensions, line lengths <=80,
+all problem headings, and PNG/PDF signatures. All passed.
+Rendered the ramp PDF with Poppler and visually inspected both figures.
+Ran the unmodified handout stokes_setup/test.py locally; it printed
+"This code executed correctly". This does not establish a Stokes run.
+
+Initial local plotting printed Fontconfig cache permission warnings.
+The course launcher now sets XDG_CACHE_HOME and other runtime/cache
+locations to writable paths in audit/runtime. The fresh validation run
+completed without those warnings.
+
+Prepared hw2_prakash.slurm from the supplied Slurm template, using the
+student-specific main filename, ast5765 environment, module/conda
+activation and Slurm submission directory instead of the TA's hardcoded NID.
+Saved exact pending Git/Stokes/archive instructions in tools/stokes_steps.md.
+
