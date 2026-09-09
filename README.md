@@ -7,9 +7,11 @@ recorded in the original HW0 questionnaire. The graduate course number is
 ## Homework
 
 - `homework/hw1_prakash/`: verified Python environment, executed notebook and
-  genuine Python/Jupyter screenshot. Stokes evidence is still required.
+  genuine Python/Jupyter screenshot. The Git terminal/Desktop screenshot and
+  Stokes evidence are still required.
 - `homework/hw2_prakash/`: complete local Python solution, companion notebook,
-  PNG sine plot, PDF ramp plot, local stdout, and Slurm script.
+  PNG sine plot, PDF ramp plot, local stdout, Slurm script and actual GitHub
+  folder/history screenshots.
 - `0-ast5765-prakash.log`: original HW0 log followed by dated, appended entries.
 - `tools/stokes_steps.md`: exact Git, Stokes, logging and packaging steps.
 - `tools/requirements_checklist.md`: requirement-by-requirement status.
@@ -31,10 +33,13 @@ the main Python file, and plotting works without a desktop display.
 
 ## Completion limits
 
-The student reported that their Stokes account has not been activated.
-Local success is not evidence of a Stokes run. Do not label the local draft
+The instructor's August 30 Webcourses announcement confirms course Stokes
+accounts are already created. The server is reachable; the student's password
+authentication is still required. Local success is not evidence of a Stokes run. Do not label the local draft
 archives as final submissions until the required remote steps are complete.
 Nothing has been submitted to Webcourses by this workspace setup.
+Local draft ZIP and tar.gz packages are saved in the parent `submission/`
+folder, with a handoff README. Each contains a copy of the closed work log.
 
 ## AI disclosure
 

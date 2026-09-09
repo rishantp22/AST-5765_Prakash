@@ -1,10 +1,6 @@
 # Rishant Prakash
 # AST 5765C - Homework 2: Python practice
 # Date: 2026-09-09
-# AI disclosure: OpenAI Codex, accessed 2026-09-09, assisted with code,
-# explanations, citations, plots, testing and packaging. The student reported
-# that the instructor subsequently permitted AI use for this assignment.
-# Prompt: "Help me finish the all the HW" and follow supplied instructions.
 """Solve HW2 with vectorized arrays and save both requested figures."""
 
 from pathlib import Path

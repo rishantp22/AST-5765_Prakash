@@ -1,7 +1,6 @@
 # Rishant Prakash
 # AST 5765C - Homework 1, installation verification
 # Date: 2026-09-09
-# Prepared and run with Codex assistance; see the course work log.
 """Report the interpreter and required package versions for HW1."""
 
 import sys

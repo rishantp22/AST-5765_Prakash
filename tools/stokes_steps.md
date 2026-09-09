@@ -6,23 +6,21 @@ open and append actual commands, dates, results, errors and job IDs as you go.
 
 ## GitHub
 
-Create an empty **private** repository named `ast5765` in your GitHub account.
-Keep it empty: do not add a README, license or .gitignore on GitHub. The local
-repository already contains course materials and homework. Your supplied
-`rishantprakash.github.io` address is your website, not this repository URL.
+The student created `rishantp22/AST-5765_Prakash`, and it was made **private**
+with explicit approval. GitHub CLI authentication completed on this Mac.
+The local repository contains course materials and homework, and its origin is
+`https://github.com/rishantp22/AST-5765_Prakash.git`. Do not create another
+repository or add another origin. The initial commit is `84cc8f1`.
 
-From the local course folder, set your actual GitHub commit email, then run:
+Repository-local author settings are already configured with Rishant Prakash
+and GitHub's no-reply email derived from the verified account ID. For future
+changes, run:
 
 ```bash
 cd /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765
-git config user.name 'Rishant Prakash'
-# Use your GitHub-verified email or the exact no-reply address in GitHub settings.
-git config user.email 'YOUR_ACTUAL_COMMIT_EMAIL'
 git add .gitignore 0-ast5765-prakash.log homework tools
-git commit -m 'Prepare HW1 environment evidence and HW2 Python practice'
-# Copy the exact URL shown by your new GitHub repository.
-git remote add origin YOUR_ACTUAL_REPOSITORY_URL
-git push -u origin master
+git commit -m 'Describe the changes you made'
+git push origin master
 git status
 git log --oneline -5
 ```
@@ -45,18 +43,31 @@ Add the screenshots and updated log in another commit and push.
 
 ## Connect to Stokes and capture HW1 evidence
 
-Use UCF internet or connect to the UCF VPN first. You need an active ARCC
-account and your own UCF NID; it is different from your course username.
+The instructor's August 30 announcement says course accounts are already
+created; **do not submit a new registration request**. Use UCF internet or
+connect to the UCF VPN when necessary. The Stokes server was reachable from
+this Mac during verification. The student supplied NID `ri061277`.
+
+To authenticate for this assisted session, run in your own Terminal:
 
 ```bash
-ssh YOUR_NID@stokes.ist.ucf.edu
+bash /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765/tools/connect_stokes.sh ri061277
+```
+
+Enter your password only at the SSH prompt and leave that window open.
+The helper allows subsequent authorized commands to reuse the connection
+without exposing the password. An ordinary login for future sessions is:
+
+```bash
+ssh ri061277@stokes.ist.ucf.edu
 hostname
 pwd
 ls
 ```
 
-Complete password/MFA prompts yourself. Capture this real remote terminal
-output as `hw1_prakash_problem3_stokes.png`, place it in the local HW1 folder,
+Complete password/MFA prompts yourself. The course announcement only
+requires a screenshot after login for HW1; the diagnostic commands above are
+optional. Capture the real remote terminal as `hw1_prakash_problem3_stokes.png`, place it in the local HW1 folder,
 and append the successful login and screenshot details to the master log.
 Never substitute a local `ls` screenshot for Stokes evidence.
 
@@ -92,9 +103,9 @@ From your Mac:
 
 ```bash
 cd /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765
-ssh YOUR_NID@stokes.ist.ucf.edu 'mkdir -p ~/hw2_prakash'
-scp -r homework/hw2_prakash/. YOUR_NID@stokes.ist.ucf.edu:~/hw2_prakash/
-ssh YOUR_NID@stokes.ist.ucf.edu
+ssh ri061277@stokes.ist.ucf.edu 'mkdir -p ~/hw2_prakash'
+scp -r homework/hw2_prakash/. ri061277@stokes.ist.ucf.edu:~/hw2_prakash/
+ssh ri061277@stokes.ist.ucf.edu
 cd ~/hw2_prakash
 sbatch hw2_prakash.slurm
 ```
@@ -126,8 +137,8 @@ timestamp. Make the latest log copy locally and on Stokes:
 # Mac
 cd /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765
 cp -p 0-ast5765-prakash.log homework/hw2_prakash/
-scp 0-ast5765-prakash.log YOUR_NID@stokes.ist.ucf.edu:~/hw2_prakash/
-ssh YOUR_NID@stokes.ist.ucf.edu
+scp 0-ast5765-prakash.log ri061277@stokes.ist.ucf.edu:~/hw2_prakash/
+ssh ri061277@stokes.ist.ucf.edu
 ```
 
 On Stokes, use a new archive name if preserving an earlier submission:
@@ -145,7 +156,7 @@ From your Mac, only download into a new, unoccupied archive path:
 
 ```bash
 cd /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765
-scp YOUR_NID@stokes.ist.ucf.edu:~/hw2_prakash.tar.gz handin/
+scp ri061277@stokes.ist.ucf.edu:~/hw2_prakash.tar.gz handin/
 tar -tzf handin/hw2_prakash.tar.gz
 ```
 
