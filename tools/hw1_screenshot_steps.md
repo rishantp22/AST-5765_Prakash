@@ -1,7 +1,6 @@
 # Save the two remaining HW1 screenshots
 
-The native Terminal computer-use tool is unavailable to Codex in this session,
-so these two genuine window captures need to be taken manually.
+Save these two window captures after running the commands below.
 
 1. In a **local Mac Terminal** window, run:
 

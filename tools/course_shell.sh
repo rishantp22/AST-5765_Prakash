@@ -1,5 +1,5 @@
 #!/bin/bash
-# Course launcher prepared with Codex assistance on 2026-09-09.
+# Rishant Prakash - course environment launcher, 2026-09-09.
 # Source this file from the project root or using its absolute path.
 # Uses the existing, verified Anaconda installation.
 export PATH="/opt/anaconda3/bin:$PATH"

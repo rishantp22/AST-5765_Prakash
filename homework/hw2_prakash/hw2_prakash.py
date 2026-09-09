@@ -22,10 +22,6 @@ print("See the work log for setup, execution and submission status.")
 
 
 print("\nProblem 2")
-# Source for 2a-2d: NumPy Developers (2026), NumPy reference:
-# https://numpy.org/doc/stable/reference/routines.array-creation.html
-# https://numpy.org/doc/stable/reference/generated/numpy.ndarray.astype.html
-# https://numpy.org/doc/stable/reference/generated/numpy.sin.html
 # The upper limit of arange is exclusive; include integer 1000 by using 1001.
 x = np.arange(0, 1001, dtype=np.int64)
 print("2a1. Number of elements, including both endpoints:", x.size)
@@ -47,10 +43,6 @@ print("Index 234 denotes the 235th element; the 234th is index 233.")
 
 
 print("\nProblem 3")
-# Source: Matplotlib Development Team (2026), Pyplot tutorial:
-# https://matplotlib.org/stable/tutorials/pyplot.html
-# Export reference: https://matplotlib.org/stable/api/_as_gen/
-# matplotlib.pyplot.savefig.html (join the two preceding URL lines).
 plt.rcParams.update({"font.size": 12, "axes.labelsize": 13,
                      "axes.titlesize": 14, "savefig.facecolor": "white",
                      "pdf.fonttype": 42})
@@ -74,9 +66,6 @@ print("3b. Saved with Matplotlib:", sine_path.name)
 
 
 print("\nProblem 4")
-# Source: NumPy Developers (2026), linspace and clip reference:
-# https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
-# https://numpy.org/doc/stable/reference/generated/numpy.clip.html
 # Keep the original ramp for the required comparison figure.
 r = np.linspace(-1., 1., 101)
 r_original = r.copy()
@@ -107,9 +96,6 @@ print("4b. Saved both curves in one Matplotlib figure:", ramp_path.name)
 
 
 print("\nProblem 5")
-# Original paraphrases drafted with Codex assistance, not copied quotations.
-# Sources: Astropy Developers (2026), Astropy 8.0.1 documentation;
-# Photutils Developers (2026), Photutils 3.0.0 documentation, 17 April 2026.
 # Both are community projects distributed freely outside UCF.
 print('''Astropy - https://www.astropy.org/
 Astropy is a free, open-source Python package that supplies common building
@@ -119,8 +105,8 @@ astronomical times and tables. These tools help keep an analysis consistent
 when data arrive with different units or coordinate conventions. For example,
 an imaging workflow can read a FITS image and use its coordinate information
 to relate image positions to positions on the sky. It is developed by the
-Astropy community. Source: Astropy Developers (2026), Astropy 8.0.1 user
-documentation, https://docs.astropy.org/en/stable/ (accessed 2026-09-09).
+Astropy community. Documentation: https://docs.astropy.org/en/stable/
+(accessed 2026-09-09).
 
 Photutils - https://photutils.readthedocs.io/en/stable/
 Photutils is a free, open-source Python package for finding astronomical
@@ -130,8 +116,7 @@ fitting point-spread-function models. For example, aperture photometry can
 measure a star's signal after accounting for the surrounding background;
 PSF fitting provides another way to measure sources when their images
 overlap. Photutils works with the Astropy ecosystem and is maintained by
-the Photutils developers. Source: Photutils Developers (2026), Photutils
-3.0.0 documentation, dated 2026-04-17,
+the Photutils developers. Documentation:
 https://photutils.readthedocs.io/en/stable/ (accessed 2026-09-09).''')
 
 

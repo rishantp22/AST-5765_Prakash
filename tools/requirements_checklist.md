@@ -3,12 +3,12 @@
 **Local HW2 solution complete. Remote and submission requirements pending.**
 This file reports verified actions, not an estimate of a grade.
 
-## Sources reviewed
+## Course materials reviewed
 
 All 34 original supplied files were inventoried. All 16 PDFs were read by
 text extraction; the image-only HW1 sheet was also rendered and visually
 read. The cumulative log, software scripts, Slurm template, test program,
-lecture notebooks and module examples were inspected. Source hashes are
+lecture notebooks and module examples were inspected. Original file hashes are
 saved in the parent `audit/all_original_files.json`.
 
 Primary requirements: Fall 2026 syllabus; `hw1_the_installations_f26.pdf`;
@@ -25,7 +25,7 @@ Its listed deadline was Monday, August 31, 2026 at 2:30 pm.
 | 1. Create homework folder and start log | Done: `homework/hw1_prakash/`; appended session in master log |
 | 2a. Launch Python environment; report version; save screenshot | Done: Python 3.14.7; executed `hw1_prakash_environment.ipynb`; actual `hw1_prakash_problem2_python.png` |
 | 2b. GitHub Desktop or terminal `git status` screenshot | Git installed, repository initialized; exact screenshot still pending |
-| 3. Log into Stokes and save screenshot | Pending user authentication; August 30 announcement confirms course accounts exist and waives typing commands for HW1 |
+| 3. Log into Stokes and save screenshot | Pending password authentication; August 30 announcement confirms course accounts exist and waives typing commands for HW1 |
 | 4. Explain log copy, ZIP creation and Webcourses submission | Instructions prepared in master log and `stokes_steps.md`; actual submission pending |
 | Final closed log copy and ZIP | Local draft packaging only until missing evidence is added |
 
@@ -83,12 +83,12 @@ The listed deadline is Wednesday, September 9, 2026 at 2:30 pm.
 - The old `unix_github.pdf` contains a malformed example remote URL; the
   actual verified repository URL is used instead.
 - The original Slurm example uses the TA's NID and `test.py`; the prepared
-  HW2 Slurm file activates a named environment and runs the student's .py.
+  HW2 Slurm file activates a named environment and runs `hw2_prakash.py`.
 
 ## Readings and other files
 
 The Matplotlib tutorial and NumPy-100 repository were opened and reviewed as
-resources. This does not claim the student completed every tutorial exercise.
+resources. Practice exercises are separate from the homework hand-in.
 The course specifically says not to hand in those exercises. The initially missing `pydatatut` tutorial was located in Webcourses
 `Files/Demos_lectures/week_2/pydatatut/`. Its rendered text was saved for
 review, and a public NRAO mirror was saved in `literature/pydatatut_NRAO.pdf`.
@@ -126,8 +126,7 @@ request.** It also says HW1 only requires a screenshot after login; no remote
 commands are required. This supersedes the earlier generic registration advice.
 Source: https://webcourses.ucf.edu/courses/1513831/discussion_topics/8665175
 
-The student's NID is now known. An SSH check reached Stokes and its welcome
+The login NID is `ri061277`. An SSH check reached Stokes and its welcome
 banner, then required password/keyboard-interactive authentication. A successful
-login has not yet been verified. `tools/connect_stokes.sh` lets the student enter
-their password in their own Terminal and share the connection for the authorized
+login has not yet been verified. `tools/connect_stokes.sh` opens a password prompt in Terminal and share the connection for the authorized
 homework commands. No password is stored in this repository.

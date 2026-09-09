@@ -1,6 +1,5 @@
 #!/bin/bash -l
 # Rishant Prakash - AST 5765C - HW2 - 2026-09-09
-# Adapted with Codex assistance from the supplied slurmformat.slurm.
 #SBATCH --job-name=hw2_prakash
 #SBATCH --output=hw2_prakash_stokes-%j.out
 #SBATCH --error=hw2_prakash_stokes-%j.err

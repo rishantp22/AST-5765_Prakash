@@ -1,5 +1,5 @@
 #!/bin/bash
-# Start a user-authenticated connection for this homework session.
+# Rishant Prakash - connect to Stokes for this homework session.
 set -euo pipefail
 if [[ $# -ne 1 || ! "$1" =~ ^[a-zA-Z]+[0-9]+$ ]]; then
   printf 'Usage: bash tools/connect_stokes.sh YOUR_NID\n' >&2

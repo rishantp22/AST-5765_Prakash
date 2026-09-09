@@ -33,8 +33,8 @@ astronomical times and tables. These tools help keep an analysis consistent
 when data arrive with different units or coordinate conventions. For example,
 an imaging workflow can read a FITS image and use its coordinate information
 to relate image positions to positions on the sky. It is developed by the
-Astropy community. Source: Astropy Developers (2026), Astropy 8.0.1 user
-documentation, https://docs.astropy.org/en/stable/ (accessed 2026-09-09).
+Astropy community. Documentation: https://docs.astropy.org/en/stable/
+(accessed 2026-09-09).
 
 Photutils - https://photutils.readthedocs.io/en/stable/
 Photutils is a free, open-source Python package for finding astronomical
@@ -44,8 +44,7 @@ fitting point-spread-function models. For example, aperture photometry can
 measure a star's signal after accounting for the surrounding background;
 PSF fitting provides another way to measure sources when their images
 overlap. Photutils works with the Astropy ecosystem and is maintained by
-the Photutils developers. Source: Photutils Developers (2026), Photutils
-3.0.0 documentation, dated 2026-04-17,
+the Photutils developers. Documentation:
 https://photutils.readthedocs.io/en/stable/ (accessed 2026-09-09).
 
 Problem 6

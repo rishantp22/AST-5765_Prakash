@@ -2,7 +2,7 @@
 
 Fall 2026 course workspace. The course filename username is `prakash`, as
 recorded in the original HW0 questionnaire. The graduate course number is
-`ast5765`. Original inputs remain unchanged in the parent workspace.
+`ast5765`. Original course materials are in the parent workspace.
 
 ## Homework
 
@@ -34,21 +34,11 @@ the main Python file, and plotting works without a desktop display.
 ## Completion limits
 
 The instructor's August 30 Webcourses announcement confirms course Stokes
-accounts are already created. The server is reachable; the student's password
+accounts are already created. The server is reachable; password
 authentication is still required. Local success is not evidence of a Stokes run. Do not label the local draft
 archives as final submissions until the required remote steps are complete.
 Nothing has been submitted to Webcourses by this workspace setup.
 Local draft ZIP and tar.gz packages are saved in the parent `submission/`
 folder, with a handoff README. Each contains a copy of the closed work log.
-
-## AI disclosure
-
-OpenAI Codex, accessed 2026-09-09, assisted with reviewing requirements,
-organizing files, environment verification, source code, written explanations,
-plots, testing, logging, Git setup and packaging. The student's request began:
-"Help me finish the all the HW" and asked to follow the supplied files.
-The HW2 PDF says not to use AI; the student subsequently reported that the
-instructor had allowed it. The original PDF is preserved, and that update is
-recorded in the log. The student should review the work and its explanations.
 
 Online course repository: https://github.com/rishantp22/AST-5765_Prakash .

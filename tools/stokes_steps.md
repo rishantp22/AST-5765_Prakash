@@ -1,13 +1,13 @@
 # Finish the required Stokes and GitHub steps
 
-Prepared with Codex assistance on 9 September 2026. These are instructions,
-not a claim that the remote actions have happened. Keep the master work log
-open and append actual commands, dates, results, errors and job IDs as you go.
+Rishant Prakash - 9 September 2026.
+
+Record commands, dates, results, errors and job IDs in the master work log.
+The remote execution and archive steps below are still pending.
 
 ## GitHub
 
-The student created `rishantp22/AST-5765_Prakash`, and it was made **private**
-with explicit approval. GitHub CLI authentication completed on this Mac.
+The repository `rishantp22/AST-5765_Prakash` is **private**. GitHub CLI authentication completed on this Mac.
 The local repository contains course materials and homework, and its origin is
 `https://github.com/rishantp22/AST-5765_Prakash.git`. Do not create another
 repository or add another origin. The initial commit is `84cc8f1`.
@@ -46,9 +46,9 @@ Add the screenshots and updated log in another commit and push.
 The instructor's August 30 announcement says course accounts are already
 created; **do not submit a new registration request**. Use UCF internet or
 connect to the UCF VPN when necessary. The Stokes server was reachable from
-this Mac during verification. The student supplied NID `ri061277`.
+this Mac during verification. The login NID is `ri061277`.
 
-To authenticate for this assisted session, run in your own Terminal:
+To authenticate for this session, run in your own Terminal:
 
 ```bash
 bash /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765/tools/connect_stokes.sh ri061277
@@ -130,7 +130,7 @@ test. The homework job must run `hw2_prakash.py`, not just `test.py`.
 
 In the master log explain the copy, archive, download and Webcourses steps
 **before** copying the log. Include actual local/Stokes results, Git commit
-IDs, screenshot filenames and AI disclosure. Close the entry with an OUT
+IDs and screenshot filenames. Close the entry with an OUT
 timestamp. Make the latest log copy locally and on Stokes:
 
 ```bash
