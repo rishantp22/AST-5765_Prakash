@@ -1,0 +1,658 @@
+Rishant Prakash
+Log for AST 5765, Fall 2026
+*****IN: Wed Aug 26 15:25:14 EDT 2026
+Started Homework 0.
+Opened TextEdit and created my AST 5765 work log.
+
+Name: Rishant Prakash
+
+Username: prakash
+
+What astronomy classes have you taken?
+My academic background is primarily in geological sciences, Earth science, planetary science, and isotope geochemistry.
+
+Are you generally comfortable with calculus and physics?
+I have experience with calculus and physics through my Earth and planetary science coursework, although my background is stronger in geological sciences than in physics. I would like to strengthen my physics and quantitative background through this course.
+
+Have you ever programmed a computer?
+Yes.
+
+In what language(s)?
+Python, Java (10 years ago), C++ for a class Numerical Methods (at Arizona State University)
+
+Have you taken a programming class, and if so which?
+I have used programming for scientific work (Plotting, regression, Chi^2 for data analysis fro my MS thesis on three-dimensional supernova modeling output files but have not taken a dedicated programming course.
+
+Have you taken statistics or probability?
+No.
+
+Will you be attending the DPS conference this year, or will you be away otherwise?
+I'm a first year PhD student, currently I do not have anything to present.
+
+Why are you taking this course?
+I am taking this course to develop stronger skills in astronomical data analysis, scientific programming, statistics, and computational methods that I can apply to my PhD research in planetary science.
+
+Are there particular topics you hope to learn?
+I would like to improve my Python-based scientific data analysis, statistical analysis, visualization, uncertainty analysis, model-data comparison, and methods for working with large astronomical and planetary-science datasets.
+
+If you have programmed outside of a course before, please briefly describe:
+I have used Python for scientific data analysis, plotting, statistical comparisons, and working with research datasets (million data points).
+
+If you have worked with scientific data before, briefly describe your experience:
+I have worked extensively with laboratory and computational scientific datasets in isotope geochemistry and planetary science. My research has included Cr and Ti isotope measurements of presolar oxide grains, comparison of measured isotope ratios with three-dimensional core-collapse supernova model outputs, statistical model-data matching, and analysis of electron-microprobe and compositional data from synthetic Ti-CMAS glasses that I build using high-T gas mixing furnace.
+
+Please describe any projects in astronomy, including involvement in amateur groups, owning a telescope, research, etc.:
+My research focuses on cosmochemistry and planetary science. I have studied presolar oxide nanograins and compared their Cr-Ti isotopic compositions with three-dimensional core-collapse supernova models to investigate their stellar origins. I also work on developing synthetic Ti-CMAS glass standards for in situ titanium-isotope measurements of calcium-aluminum-rich inclusions (CAIs). My PhD research will involve isotope geochemistry of early Solar System materials.
+
+
+
+
+How I will complete and submit the homework:
+
+1. I will create a folder named hw0_rishant on my Desktop.
+
+2. After completing my log file, I will copy
+0-ast5765-rishant.log
+from my Desktop into the hw0_rishant folder.
+
+3. I will zip the hw0_rishant folder by right-clicking the folder and selecting "Compress hw0_rishant". This will create hw0_rishant.zip.
+
+4. I will log in to Webcourses, open the Homework 0 assignment for AST 5765, upload hw0_rishant.zip, and submit the assignment. (Although, I've not been registered in the coursework yet, so probably I shall be emailing the file to Prof Joseph Harrington and TA Cameron Collyer.
+
+
+*****OUT: Wed Aug 26 15:36:05 EDT 2026
+
+*****IN: Mon Aug 31 21:26:06 EDT 2026
+HW1. 
+Working directory: /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765
+Name: Rishant Prakash. Course: AST 5765C, Fall 2026.
+username: prakash.
+
+Reviewed the syllabus, homework sheets, installation instructions
+homework format rules and worklog instructions.
+Created homework/hw1_prakash
+
+HW1's listed deadline is August 31 at 14:30;
+
+....
+
+
+.....
+
+
+......
+
+
+...
+
+SICK- attended the class through zoom.
+.....
+
+
+.....
+
+
+.....
+Finished partially but never uploaded the file, late submission.
+Screenshots for HW1 shows the complete environment verification output.
+
+*****OUT: Mon Aug 31 26 15:36:05 EDT 2026]
+
+*****IN: Mon Sep 07 09:16:56 EDT 2026
+(Labor Day)
+
+HW2.
+Working directory: /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765
+
+Name: Rishant Prakash. Course: AST 5765C, Fall 2026.
+username: prakash.
+
+Reviewed the syllabus, homework sheets, Git and
+Stokes handouts, homework format rules and worklog instructions,
+literature,lectures, handouts and tools.
+Created homework/hw2_prakash.
+
+HW2's deadline: September 9 at 14:30.
+
+Local environment: macOS 26.6.2, arm64; Apple Command Line Tools installed;
+git 2.39.5 (Apple Git-154). The default Miniconda environment lacks the
+scientific packages. The existing /opt/anaconda3 environment has:
+Python 3.14.7, NumPy 2.4.6, SciPy 1.18.0, Matplotlib 3.11.0,
+pandas 3.0.5, IPython 9.15.0, Notebook 7.5.7, JupyterLab 4.5.9,
+nbconvert 7.17.1, ipykernel 6.31.0, Spyder 6.1.5 and Astropy 8.0.1.
+Used this existing installation.
+
+Update Tuesday Sep 08 17:27:02 EDT 2026
+
+Initialized Git with git init -b master.
+
+Started JupyterLab
+Saved the Python version and package results with a notebook screenshot:
+homework/hw1_prakash/hw1_prakash_problem2_python.png.
+
+HW2 calculations in homework/hw2_prakash/hw2_prakash.py:
+Problem 2: np.arange(0, 1001, dtype=np.int64) creates 1001 integers with
+minimum 0 and maximum 1000. Promoted x to float64 before rescaling x in
+place by 2*pi/1000. The conversion allocates floating-point storage;
+integer storage cannot represent fractional radians. The rescaled range
+is 0.0 to 6.283185307179586 radians. Applied np.sin(x) elementwise.
+y[234] = 0.994951016981300. Index 234 is the 235th element.
+
+Problem 3: plotted y against x with axis labels, units, pi ticks, a grid
+and a legend. Saved hw2_prakash_problem3_sine.png with Matplotlib at
+300 dpi.
+
+Problem 4: np.linspace(-1., 1., 101) creates the ramp with spacing 0.02.
+Preserved an independent original copy, then used np.clip with out=r to
+limit the working array to [-0.5, 0.5]. Plotted the original and clipped
+curves together and saved hw2_prakash_problem4_ramp.pdf.
+
+Problem 5: wrote the descriptions of Astropy and Photutils in a printed
+triple-single-quoted string, with the required package URLs:
+https://www.astropy.org/
+https://photutils.readthedocs.io/en/stable/
+
+On Mac (locally):
+source tools/course_shell.sh
+python homework/hw2_prakash/hw2_prakash.py
+Saved the printed results in hw2_prakash_local_run.txt.
+
+
+Prepared hw2_prakash.slurm using the web-course template, the ast5765
+environment and the Slurm submission directory. It runs hw2_prakash.py.
+
+Update Wed Sep 09 00:43:21 EDT 2026
+
+Connected GitHub CLI 2.100.0 to rishantp22. Changed the course repository
+to private. Set the local commit email to
+150193813+rishantp22@users.noreply.github.com.
+
+Committed and pushed the course files:
+git add .gitignore README.md 0-ast5765-prakash.log homework tools handouts lectures
+git commit -m "Prepare HW1 environment evidence and complete local HW2 solution"
+git push -u origin master
+
+The first push had a DNS failure; the retry succeeded.
+
+hw2_prakash_problem6_git_files.png
+hw2_prakash_problem6_git_history.png
+Executed and saved both homework notebooks with their outputs. The main
+HW2 submission file is hw2_prakash.py;
+
+*****OUT: Wed Sep 09 00:43:21 EDT 2026
+
+
+*****IN: Wed Sep 09 01:15:07 EDT 2026
+
+
+The August 30 announcement says that the course Stokes accounts
+already exist. A new account request is not needed.
+
+ri061277@stokes.ist.ucf.edu
+
+
+Updated the draft packages and checked
+file integrity, extraction and execution again. hw1_screenshot_steps.md
+
+HW1 Git terminal/Desktop screenshot; Stokes login screenshot;
+HW2 execution, transfers and archive creation on Stokes; Webcourses
+submission and the listed HW0 peer reviews.
+
+*****OUT: Wed Sep 09 01:18:37 EDT 2026
+
+
+*****IN: Wed Sep 09 01:26:55 EDT 2026
+
+Revised the wording and comments in the homework files and notes.
+Kept the numerical calculations and completion status consistent.
+Refreshing notebook outputs and screenshots from the current files.
+
+
+HW2- solutions to questions for sine PNG and ramp PDF.
+Captured the refreshed HW1 notebook with all package versions visible.
+The name header and technical comments are consistent across the files.
+
+*****OUT: Wed Sep 09 01:32:36 EDT 2026
+
+
+*****IN: Wed Sep 09 01:36:46 EDT 2026
+
+Pushed the revised homework files to the private course repository.
+Commit: 7d4a913 (Update homework notes and comments).
+Saved fresh GitHub folder and history screenshots showing that commit.
+
+I am trying to log in to Stokes for AST 5765. SSH accepts the connection and asks for my UCF password, followed by a “Verification code.” My normal UCF Microsoft Authenticator code is not being accepted, and I do not believe I have previously enrolled an ARCC/Stokes authenticator token
+
+*****OUT: Wed Sep 09 01:38:46 EDT 2026
+
+******IN: Wed Sep  9 13:56:20 EDT 2026
+
+Finalized HW1 and HW2 for submission, added a few missing screenshots in HW1.
+
+******OUT: Wed Sep  9 13:57:23 EDT 2026
+
+*******IN: Wed Sep 9 15:22:21 EDT 2026
+
+Attempting answers to questions in class.
+
+what are all effects that affect the measurement?
+-Temp
+-Built quality of the measuring tape
+
+
+What if the tape was only 1m?
+-
+What if stick was in half-inches, not centimeters, but we didn’t notice?
+What if it was a metal stick?
+
+*****IN Sun Sep 20 20:34:00 EDT 2026
+Started work on Homework 3 and Homework 4.
+Created the homework folders using mkdir in Terminal.
+
+Created new folder hw3_prakash using Terminal by using "mkdir hw3_prakash"
+Created python file for work "hw3_prakash.py" using "touch hw3_prakash.py" in the folder hw3_prakash
+
+
+Copied the course support-module template into my Homework 3 directory.
+
+Problem 2(b) - Structure of the supplied module template
+The template contains a module-level docstring at the top, imports near the beginning of the file, function definitions, function-level docstrings, examples, and comments. The module docstring explains the purpose of the file. Imports are kept at the top so that all dependencies used by the functions are clear. Each function has its own docstring that explains what it does, its parameters, its return value, and an example. Comments make the code easier to follow. The example section is also useful for testing with doctest.
+
+Problem 2(c-d) - Cleaning the template and starting square
+I copied the supplied module template and removed imports and example material that were not needed for this assignment. I kept NumPy because the functions operate on numerical arrays and Matplotlib pyplot because squareplot creates a plot. I then replaced the example function with a function named square.
+
+Problem 2(e-f) - Writing and testing square
+I implemented square using numpy.square so that one operation works for both numerical scalars and arrays of different dimensions. I tested the function with an integer scalar, a floating-point scalar, a one-dimensional NumPy array, and a two-dimensional NumPy array. I also used Python's doctest module to check the example in the function docstring.
+
+Example tests used:
+python -m doctest -v prakash_functions.py
+
+In Python:
+square(3)
+square(2.5)
+square(np.array([1, 2, 3]))
+square(np.array([[1.0, 2.0], [3.0, 4.0]]))
+
+Problem 2 - Git updates
+After creating the support file I added it to Git and committed it. I repeated this after implementing square, after testing/debugging it, and after completing the final docstring.
+
+Example commands:
+git status
+git add prakash_functions.py
+git commit -m "Start HW3 support module"
+git push
+
+git add prakash_functions.py
+git commit -m "Implement and test square function"
+git push
+
+git add prakash_functions.py hw3_prakash.py
+git commit -m "Complete HW3 square tests and documentation"
+git push
+
+To show the commit history for the required screenshot:
+git log --oneline --decorate -n 10
+
+Problem 3 - squareplot
+I added squareplot to the same support module. The function uses numpy.linspace to create the requested number of evenly spaced values including both endpoints. It calls square exactly once to create y, then plots y versus x. I added the requested axis labels and title. If saveplot is not False, the function saves the figure as a PDF using the filename supplied by the user rather than a hard-coded name. Calling squareplot(1, 7, 5, saveplot='squareplot_prakash.pdf') produces x values 1, 2.5, 4, 5.5, and 7.
+
+Problem 4 - Rubric file format
+The rubric instructions say that the rubric should be written in a separate .txt or .pdf file. I used a .txt file.
+
+Problem 5(a) - Logging in to Stokes
+From my local terminal I used SSH with my UCF/Stokes username:
+ssh ri061277@stokes.ist.ucf.edu
+
+After authentication, I verified that I was on Stokes with:
+hostname
+pwd
+
+Problem 5(b) - Creating the HW3 directory on Stokes
+On Stokes I navigated to the appropriate homework location and created the folder with mkdir:
+mkdir -p hw3_prakash
+cd hw3_prakash
+
+Problem 5(c) - Copying Python files to Stokes
+From a LOCAL terminal, not from inside the Stokes SSH session, I can use scp to upload the homework files. For example, if my local terminal is already inside the hw3_prakash folder:
+scp hw3_prakash.py prakash_functions.py hw3_rubric.txt ri061277@stokes.ist.ucf.edu:~/hw3_prakash/
+
+I can also copy the plot and screenshots similarly:
+scp squareplot_prakash.pdf *.png ri061277@stokes.ist.ucf.edu:~/hw3_prakash/
+
+Problem 5(d) - Testing on Stokes
+After logging into Stokes and changing into the homework directory, I tested the main program with:
+cd ~/hw3_prakash
+python hw3_prakash.py
+
+I also tested the function docstrings with:
+python -m doctest -v prakash_functions.py
+
+I checked the directory contents with:
+ls -lh
+
+Problem 5(e-f) - Git/GitHub and screenshot
+After testing I checked the repository status, added the updated files, committed them, and pushed them to GitHub:
+git status
+git add .
+git commit -m "Test HW3 on Stokes"
+git push
+
+I displayed the history for the requested screenshot with:
+git log --oneline --decorate -n 10
+
+Problem 5(h-i) - Copying the log, creating tar.gz, and submitting
+I first copied my log file into the HW3 directory. Once all required files were in hw3_prakash, I moved to the directory ABOVE hw3_prakash and created a compressed tar archive:
+cd ~
+tar -czvf hw3_prakash.tar.gz hw3_prakash/
+
+I verified that the archive existed with:
+ls -lh hw3_prakash.tar.gz
+
+From my LOCAL computer, I then changed into my local handin directory and downloaded the archive from Stokes using scp:
+cd ~/ast4762/handin
+scp ri061277@stokes.ist.ucf.edu:~/hw3_prakash.tar.gz .
+
+I verified the downloaded file using:
+ls -lh hw3_prakash.tar.gz
+
+Homework 4 - Read/Write Files and Probability
+
+Date: 21 September 2026
+Course: AST 5765
+Name: Rishant Prakash
+
+
+Problem 1 - Create Homework 4 folder
+
+I used the terminal to navigate to my class homework directory and created a new folder for Homework 4.
+
+Commands used:
+
+cd /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765/homework
+mkdir hw4_prakash
+cd hw4_prakash
+
+I created my main homework file using the required naming convention:
+
+hw4_prakash.py
+
+I also made sure that my name, assignment number, and date were included as comments at the top of the Python file.
+
+
+Problem 2 - Gaussian Distribution
+
+
+Problem 2(a)
+
+The goal was to generate a random sample of 10,000 values drawn from a Gaussian distribution with:
+
+mean, mu = 55
+standard deviation, sigma = 13
+number of draws, N = 10000
+
+I used NumPy's random.normal function because it generates random samples from a normal/Gaussian distribution.
+
+The main command used was:
+
+sample = np.random.normal(mu, sigma, N)
+
+I printed the sample mean and sample standard deviation to check that the generated sample was reasonably close to the parent Gaussian distribution.
+
+For my generated sample, the values were approximately:
+
+Sample mean = 54.918
+Sample standard deviation = 12.973
+
+These values are close to the requested parent distribution values of mu = 55 and sigma = 13, which is expected for a large random sample.
+
+
+Problem 2(b)
+
+I plotted a histogram of the 10,000 random Gaussian values.
+
+The assignment required histogram bins from x = 0 to x = 100 with a width of 1 unit.
+
+I created the bin edges using NumPy and plotted the histogram using Matplotlib.
+
+I labeled the axes and included a descriptive title so that the plot would be publication-ready.
+
+The histogram was saved as:
+
+hw4_prakash_problem2b_histogram.png
+
+The x-axis represents the sampled value and the y-axis represents the number of draws in each bin.
+
+
+Problem 2(c)
+
+I calculated the analytic Gaussian distribution using the formula:
+
+f(x) = 1 / (sigma * sqrt(2*pi)) *
+       exp(-(x - mu)^2 / (2*sigma^2))
+
+The homework instructed us to evaluate the Gaussian at the center of each histogram bin.
+
+Since the analytic Gaussian is a probability density, its values are much smaller than the number of points in the histogram.
+
+To compare the Gaussian directly with the histogram, I multiplied the Gaussian by the total number of draws, N.
+
+Because the histogram bin width is 1, the expected number of draws in each bin is:
+
+expected counts = N * Gaussian(x) * bin width
+
+with bin width = 1.
+
+I overplotted this Gaussian curve on top of the histogram.
+
+The combined plot was saved as:
+
+hw4_prakash_problem2c_gaussian_overlay.png
+
+The Gaussian curve follows the general shape of the randomly generated histogram, as expected.
+
+
+Problem 3 - AST 5765
+
+
+Problem 3(a) - Gaussian FWHM
+
+I derived the relationship between the full width at half maximum and sigma for a Gaussian distribution.
+
+For a Gaussian:
+
+f(x) = A * exp(-(x - mu)^2 / (2*sigma^2))
+
+At half maximum:
+
+f(x) = A / 2
+
+Therefore:
+
+1/2 = exp(-(x - mu)^2 / (2*sigma^2))
+
+Taking the natural logarithm:
+
+ln(1/2) = -(x - mu)^2 / (2*sigma^2)
+
+Since:
+
+ln(1/2) = -ln(2)
+
+this becomes:
+
+(x - mu)^2 = 2*sigma^2*ln(2)
+
+Therefore:
+
+|x - mu| = sigma*sqrt(2*ln(2))
+
+The distance from the center to either half-maximum point is:
+
+sigma*sqrt(2*ln(2))
+
+The full width between the two half-maximum points is therefore:
+
+FWHM = 2*sigma*sqrt(2*ln(2))
+
+Numerically:
+
+2*sqrt(2*ln(2)) = 2.35482
+
+Therefore:
+
+FWHM approximately equals 2.354*sigma
+
+
+Problem 3(b) - Meaning of a line on a log-log plot
+
+A straight line on a log-log plot represents a power-law relationship.
+
+Suppose the line in log space is:
+
+log10(y) = m*log10(x) + b
+
+where:
+
+m = slope
+b = intercept
+
+Taking 10 to the power of both sides gives:
+
+y = 10^(m*log10(x) + b)
+
+Using exponent rules:
+
+y = 10^b * 10^(m*log10(x))
+
+and:
+
+10^(m*log10(x)) = x^m
+
+Therefore:
+
+y = 10^b * x^m
+
+If:
+
+A = 10^b
+
+then:
+
+y = A*x^m
+
+Therefore, the slope of a straight line on a log-log plot gives the power-law exponent m, and the intercept gives log10(A).
+
+
+Git/GitHub work
+
+I checked the status of my Git repository using:
+
+git status
+
+I added my Homework 4 files using:
+
+git add homework/hw4_prakash
+
+I committed the files using a descriptive commit message such as:
+
+git commit -m "Add Homework 4 Gaussian analysis"
+
+I then pushed the changes to GitHub using:
+
+git push origin master
+
+I checked my commit history using:
+
+git log --oneline --decorate -n 10
+
+I saved a screenshot of the Git history and placed it inside the hw4_prakash folder using an appropriate descriptive filename.
+
+
+Testing Homework 4 on Stokes
+
+I logged in to Stokes from my Mac terminal using:
+
+ssh ri061277@stokes.ist.ucf.edu
+
+Once logged in, I created the Homework 4 folder using:
+
+mkdir -p ~/hw4_prakash
+
+I then exited Stokes so that I could copy my local files using scp.
+
+From my Mac terminal I copied the Python file and generated plot files to Stokes.
+
+Example:
+
+scp /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765/homework/hw4_prakash/hw4_prakash.py \
+ri061277@stokes.ist.ucf.edu:~/hw4_prakash/
+
+I similarly copied the PNG files and Git history screenshot into the same Stokes folder.
+
+I then logged back into Stokes:
+
+ssh ri061277@stokes.ist.ucf.edu
+
+and changed into the Homework 4 folder:
+
+cd ~/hw4_prakash
+
+I checked the contents with:
+
+ls -lh
+
+I tested the Python code using:
+
+python3 hw4_prakash.py
+
+The program ran successfully and generated the expected output and plots.
+
+
+Copying the log to Stokes
+
+After finishing the homework and updating this log, I copied the course log file into the Homework 4 folder on Stokes.
+
+The log file follows the class naming convention:
+
+0-ast5765-prakash.log
+
+I verified that the Python file, plots, screenshot, and log file were all present in the hw4_prakash folder.
+
+
+Creating the tar.gz file
+
+On Stokes, I moved to the directory above hw4_prakash:
+
+cd ~
+
+I created a compressed tar archive using:
+
+tar -czvf hw4_prakash.tar.gz hw4_prakash/
+
+I checked that the tar.gz file had been created successfully using:
+
+ls -lh hw4_prakash.tar.gz
+
+I also checked the contents of the archive using:
+
+tar -tzf hw4_prakash.tar.gz
+
+
+Downloading the final submission
+
+On my local Mac, I changed into my class handin directory:
+
+cd /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765/handin
+
+I downloaded the completed tar.gz file from Stokes using:
+
+scp ri061277@stokes.ist.ucf.edu:~/hw4_prakash.tar.gz .
+
+I checked that the file downloaded successfully using:
+ls -lh hw4_prakash.tar.gz
+
+The final file to submit to Webcourses is:
+hw4_prakash.tar.gz
+
+****Out Mon Sep 21 00:35:06 EDT 2026
+
