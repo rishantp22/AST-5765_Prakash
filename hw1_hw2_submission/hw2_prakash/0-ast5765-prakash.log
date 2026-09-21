@@ -1,0 +1,232 @@
+Rishant Prakash
+Log for AST 5765, Fall 2026
+*****IN: Wed Aug 26 15:25:14 EDT 2026
+Started Homework 0.
+Opened TextEdit and created my AST 5765 work log.
+
+Name: Rishant Prakash
+
+Username: prakash
+
+What astronomy classes have you taken?
+My academic background is primarily in geological sciences, Earth science, planetary science, and isotope geochemistry.
+
+Are you generally comfortable with calculus and physics?
+I have experience with calculus and physics through my Earth and planetary science coursework, although my background is stronger in geological sciences than in physics. I would like to strengthen my physics and quantitative background through this course.
+
+Have you ever programmed a computer?
+Yes.
+
+In what language(s)?
+Python, Java (10 years ago), C++ for a class Numerical Methods (at Arizona State University)
+
+Have you taken a programming class, and if so which?
+I have used programming for scientific work (Plotting, regression, Chi^2 for data analysis fro my MS thesis on three-dimensional supernova modeling output files but have not taken a dedicated programming course.
+
+Have you taken statistics or probability?
+No.
+
+Will you be attending the DPS conference this year, or will you be away otherwise?
+I'm a first year PhD student, currently I do not have anything to present.
+
+Why are you taking this course?
+I am taking this course to develop stronger skills in astronomical data analysis, scientific programming, statistics, and computational methods that I can apply to my PhD research in planetary science.
+
+Are there particular topics you hope to learn?
+I would like to improve my Python-based scientific data analysis, statistical analysis, visualization, uncertainty analysis, model-data comparison, and methods for working with large astronomical and planetary-science datasets.
+
+If you have programmed outside of a course before, please briefly describe:
+I have used Python for scientific data analysis, plotting, statistical comparisons, and working with research datasets (million data points).
+
+If you have worked with scientific data before, briefly describe your experience:
+I have worked extensively with laboratory and computational scientific datasets in isotope geochemistry and planetary science. My research has included Cr and Ti isotope measurements of presolar oxide grains, comparison of measured isotope ratios with three-dimensional core-collapse supernova model outputs, statistical model-data matching, and analysis of electron-microprobe and compositional data from synthetic Ti-CMAS glasses that I build using high-T gas mixing furnace.
+
+Please describe any projects in astronomy, including involvement in amateur groups, owning a telescope, research, etc.:
+My research focuses on cosmochemistry and planetary science. I have studied presolar oxide nanograins and compared their Cr-Ti isotopic compositions with three-dimensional core-collapse supernova models to investigate their stellar origins. I also work on developing synthetic Ti-CMAS glass standards for in situ titanium-isotope measurements of calcium-aluminum-rich inclusions (CAIs). My PhD research will involve isotope geochemistry of early Solar System materials.
+
+
+
+
+How I will complete and submit the homework:
+
+1. I will create a folder named hw0_rishant on my Desktop.
+
+2. After completing my log file, I will copy
+0-ast5765-rishant.log
+from my Desktop into the hw0_rishant folder.
+
+3. I will zip the hw0_rishant folder by right-clicking the folder and selecting "Compress hw0_rishant". This will create hw0_rishant.zip.
+
+4. I will log in to Webcourses, open the Homework 0 assignment for AST 5765, upload hw0_rishant.zip, and submit the assignment. (Although, I've not been registered in the coursework yet, so probably I shall be emailing the file to Prof Joseph Harrington and TA Cameron Collyer.
+
+
+*****OUT: Wed Aug 26 15:36:05 EDT 2026
+
+*****IN: Mon Aug 31 21:26:06 EDT 2026
+HW1. 
+Working directory: /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765
+Name: Rishant Prakash. Course: AST 5765C, Fall 2026.
+username: prakash.
+
+Reviewed the syllabus, homework sheets, installation instructions
+homework format rules and worklog instructions.
+Created homework/hw1_prakash
+
+HW1's listed deadline is August 31 at 14:30;
+
+....
+
+
+.....
+
+
+......
+
+
+...
+
+SICK- attended the class through zoom.
+.....
+
+
+.....
+
+
+.....
+Finished partially but never uploaded the file, late submission.
+Screenshots for HW1 shows the complete environment verification output.
+
+*****OUT: Mon Aug 31 26 15:36:05 EDT 2026]
+
+*****IN: Mon Sep 07 09:16:56 EDT 2026
+(Labor Day)
+
+HW2.
+Working directory: /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765
+
+Name: Rishant Prakash. Course: AST 5765C, Fall 2026.
+username: prakash.
+
+Reviewed the syllabus, homework sheets, Git and
+Stokes handouts, homework format rules and worklog instructions,
+literature,lectures, handouts and tools.
+Created homework/hw2_prakash.
+
+HW2's deadline: September 9 at 14:30.
+
+Local environment: macOS 26.6.2, arm64; Apple Command Line Tools installed;
+git 2.39.5 (Apple Git-154). The default Miniconda environment lacks the
+scientific packages. The existing /opt/anaconda3 environment has:
+Python 3.14.7, NumPy 2.4.6, SciPy 1.18.0, Matplotlib 3.11.0,
+pandas 3.0.5, IPython 9.15.0, Notebook 7.5.7, JupyterLab 4.5.9,
+nbconvert 7.17.1, ipykernel 6.31.0, Spyder 6.1.5 and Astropy 8.0.1.
+Used this existing installation.
+
+Update Tuesday Sep 08 17:27:02 EDT 2026
+
+Initialized Git with git init -b master.
+
+Started JupyterLab
+Saved the Python version and package results with a notebook screenshot:
+homework/hw1_prakash/hw1_prakash_problem2_python.png.
+
+HW2 calculations in homework/hw2_prakash/hw2_prakash.py:
+Problem 2: np.arange(0, 1001, dtype=np.int64) creates 1001 integers with
+minimum 0 and maximum 1000. Promoted x to float64 before rescaling x in
+place by 2*pi/1000. The conversion allocates floating-point storage;
+integer storage cannot represent fractional radians. The rescaled range
+is 0.0 to 6.283185307179586 radians. Applied np.sin(x) elementwise.
+y[234] = 0.994951016981300. Index 234 is the 235th element.
+
+Problem 3: plotted y against x with axis labels, units, pi ticks, a grid
+and a legend. Saved hw2_prakash_problem3_sine.png with Matplotlib at
+300 dpi.
+
+Problem 4: np.linspace(-1., 1., 101) creates the ramp with spacing 0.02.
+Preserved an independent original copy, then used np.clip with out=r to
+limit the working array to [-0.5, 0.5]. Plotted the original and clipped
+curves together and saved hw2_prakash_problem4_ramp.pdf.
+
+Problem 5: wrote the descriptions of Astropy and Photutils in a printed
+triple-single-quoted string, with the required package URLs:
+https://www.astropy.org/
+https://photutils.readthedocs.io/en/stable/
+
+On Mac (locally):
+source tools/course_shell.sh
+python homework/hw2_prakash/hw2_prakash.py
+Saved the printed results in hw2_prakash_local_run.txt.
+
+
+Prepared hw2_prakash.slurm using the web-course template, the ast5765
+environment and the Slurm submission directory. It runs hw2_prakash.py.
+
+Update Wed Sep 09 00:43:21 EDT 2026
+
+Connected GitHub CLI 2.100.0 to rishantp22. Changed the course repository
+to private. Set the local commit email to
+150193813+rishantp22@users.noreply.github.com.
+
+Committed and pushed the course files:
+git add .gitignore README.md 0-ast5765-prakash.log homework tools handouts lectures
+git commit -m "Prepare HW1 environment evidence and complete local HW2 solution"
+git push -u origin master
+
+The first push had a DNS failure; the retry succeeded.
+
+hw2_prakash_problem6_git_files.png
+hw2_prakash_problem6_git_history.png
+Executed and saved both homework notebooks with their outputs. The main
+HW2 submission file is hw2_prakash.py;
+
+*****OUT: Wed Sep 09 00:43:21 EDT 2026
+
+
+*****IN: Wed Sep 09 01:15:07 EDT 2026
+
+
+The August 30 announcement says that the course Stokes accounts
+already exist. A new account request is not needed.
+
+ri061277@stokes.ist.ucf.edu
+
+
+Updated the draft packages and checked
+file integrity, extraction and execution again. hw1_screenshot_steps.md
+
+HW1 Git terminal/Desktop screenshot; Stokes login screenshot;
+HW2 execution, transfers and archive creation on Stokes; Webcourses
+submission and the listed HW0 peer reviews.
+
+*****OUT: Wed Sep 09 01:18:37 EDT 2026
+
+
+*****IN: Wed Sep 09 01:26:55 EDT 2026
+
+Revised the wording and comments in the homework files and notes.
+Kept the numerical calculations and completion status consistent.
+Refreshing notebook outputs and screenshots from the current files.
+
+
+HW2- solutions to questions for sine PNG and ramp PDF.
+Captured the refreshed HW1 notebook with all package versions visible.
+The name header and technical comments are consistent across the files.
+
+*****OUT: Wed Sep 09 01:32:36 EDT 2026
+
+
+*****IN: Wed Sep 09 01:36:46 EDT 2026
+
+Pushed the revised homework files to the private course repository.
+Commit: 7d4a913 (Update homework notes and comments).
+Saved fresh GitHub folder and history screenshots showing that commit.
+
+I am trying to log in to Stokes for AST 5765. SSH accepts the connection and asks for my UCF password, followed by a “Verification code.” My normal UCF Microsoft Authenticator code is not being accepted, and I do not believe I have previously enrolled an ARCC/Stokes authenticator token
+
+*****OUT: Wed Sep 09 01:38:46 EDT 2026
+
+******IN: Wed Sep  9 13:56:20 EDT 2026
+
+Finalized HW1 and HW2 for submission, added a few missing screenshots in HW1.
+
+******OUT: Wed Sep  9 13:57:23 EDT 2026

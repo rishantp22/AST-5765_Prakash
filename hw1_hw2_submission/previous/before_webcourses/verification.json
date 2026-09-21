@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-09-09T01:36:46.180791-04:00",
+  "status": "LOCAL_DRAFT; Stokes and submission requirements incomplete",
+  "packages": [
+    {
+      "path": "/Users/cosmic-rishant/Desktop/HW_AST_5765C/submission/previous/before_webcourses/hw1_prakash_LOCAL_DRAFT.zip",
+      "size": 67558,
+      "sha256": "1602fd322691351959d2ee8ddb4a5304dfa916d7699c04f0d8b9c78a26c4060d",
+      "members": {
+        "hw1_prakash/0-ast5765-prakash.log": "c9f2fa9bc112d67f9e11cc845956be60f9380b6fae9bf51150cfae3f5a6a9c08",
+        "hw1_prakash/hw1_prakash_environment.ipynb": "5830a12e62d2f2d6a2f2205363fd95d3375d1f4bc7631b94770ccbb0684ad156",
+        "hw1_prakash/hw1_prakash_environment.py": "53b3c4d6794b42cc3b8c2c4ae0199c49edd2f10f8a4e84d07633ae65a0aa779e",
+        "hw1_prakash/hw1_prakash_problem2_python.png": "75b3c8c4139237a2739ea425fb2c24327556efb56f19a4d1cf2deeb1b6614d17"
+      },
+      "archive_and_log_checks": "PASS"
+    },
+    {
+      "path": "/Users/cosmic-rishant/Desktop/HW_AST_5765C/submission/previous/before_webcourses/hw2_prakash_LOCAL_DRAFT.tar.gz",
+      "size": 342906,
+      "sha256": "93832b04a5b8e57413c48770c2c88a74145621cdcd8b1d1d641e065cbae4f9dd",
+      "members": {
+        "hw2_prakash/0-ast5765-prakash.log": "c9f2fa9bc112d67f9e11cc845956be60f9380b6fae9bf51150cfae3f5a6a9c08",
+        "hw2_prakash/hw2_prakash.ipynb": "9dccd5460383d20945e716a828d3ae8d1ee1fee502f75d9084f53ce805d33b27",
+        "hw2_prakash/hw2_prakash.py": "0c70e1680e3b8c6427e17ac89b0b305552e922203a62b3dfec7bf0fe84f47f88",
+        "hw2_prakash/hw2_prakash.slurm": "7045f79c4b310aedccbbf05b0dc0e08d999e2e58196e86b2169c44b557786122",
+        "hw2_prakash/hw2_prakash_local_run.txt": "04268a736cf7ebdf5860160b256581983c7740b42a5f87b2effee61e0571b41b",
+        "hw2_prakash/hw2_prakash_problem3_sine.png": "e7c74a4ff5eba109a8efe4e25bd879fd3ca14ac3feb83768aa4205b7f0308762",
+        "hw2_prakash/hw2_prakash_problem4_ramp.pdf": "ced01fa19ce9adc41a2cda4571db1ec2b5e1b3f2c9b53a6f2735aa25fa0c4e72",
+        "hw2_prakash/hw2_prakash_problem6_git_files.png": "6efc05b6477daa23710150b1f1f315bb18f670be376e02f7d85d4cbbf8a6c610",
+        "hw2_prakash/hw2_prakash_problem6_git_history.png": "a653b895827a318346407e2b08d20352df4c7e1197907cbe9f35a455844d300b"
+      },
+      "archive_and_log_checks": "PASS"
+    }
+  ],
+  "pending": [
+    "HW1 GitHub Desktop or terminal git status screenshot",
+    "Stokes password authentication and HW1 remote screenshot",
+    "HW2 transfer, execution, verification and tar.gz creation on Stokes",
+    "Webcourses submission and receipts",
+    "Two required HW0 peer-review links shown in Webcourses; not sent",
+    "No HW3+ question sheets supplied or listed in current assignments"
+  ],
+  "extracted_hw2_run": {
+    "result": "PASS",
+    "return_code": 0,
+    "stdout_path": "/Users/cosmic-rishant/Desktop/HW_AST_5765C/audit/packaged_hw2_run.txt"
+  },
+  "original_files": {
+    "count": 34,
+    "unchanged": true
+  },
+  "original_log_prefix_preserved": true,
+  "note": "Refreshed duplicate draft packages; these copies have not been submitted."
+}

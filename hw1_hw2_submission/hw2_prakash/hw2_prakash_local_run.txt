@@ -1,0 +1,56 @@
+Problem 1
+Rishant Prakash | AST 5765C | Homework 2 | 2026-09-09
+Main file: hw2_prakash.py in homework/hw2_prakash/.
+See the work log for setup, execution and submission status.
+
+Problem 2
+2a1. Number of elements, including both endpoints: 1001
+2a2. Integer array dtype: int64
+2a2. Minimum: 0 Maximum: 1000
+2b1. x was promoted to float64 and rescaled in place, in radians.
+2b2. Minimum: 0.0 Maximum: 6.283185307179586
+2c. y = sin(x) has 1001 dimensionless elements.
+2d. y[234] = 0.994951016981300
+Index 234 denotes the 235th element; the 234th is index 233.
+
+Problem 3
+3a. Plotted y against x with labeled axes and units.
+3b. Saved with Matplotlib: hw2_prakash_problem3_sine.png
+
+Problem 4
+4a1. Original ramp: 101 evenly spaced elements;
+minimum = -1.0 ; maximum = 1.0
+spacing = 0.02
+4a2. Clipped ramp minimum = -0.5 ; maximum = 0.5
+4b. Saved both curves in one Matplotlib figure: hw2_prakash_problem4_ramp.pdf
+
+Problem 5
+Astropy - https://www.astropy.org/
+Astropy is a free, open-source Python package that supplies common building
+blocks for astronomical analysis. It can read and write FITS files, attach
+physical units to quantities, transform celestial coordinates, and handle
+astronomical times and tables. These tools help keep an analysis consistent
+when data arrive with different units or coordinate conventions. For example,
+an imaging workflow can read a FITS image and use its coordinate information
+to relate image positions to positions on the sky. It is developed by the
+Astropy community. Documentation: https://docs.astropy.org/en/stable/
+(accessed 2026-09-09).
+
+Photutils - https://photutils.readthedocs.io/en/stable/
+Photutils is a free, open-source Python package for finding astronomical
+sources and measuring their light in images. Its tools include estimating
+the background, locating sources, measuring flux inside apertures, and
+fitting point-spread-function models. For example, aperture photometry can
+measure a star's signal after accounting for the surrounding background;
+PSF fitting provides another way to measure sources when their images
+overlap. Photutils works with the Astropy ecosystem and is maintained by
+the Photutils developers. Documentation:
+https://photutils.readthedocs.io/en/stable/ (accessed 2026-09-09).
+
+Problem 6
+This run completed the numerical work and wrote both plot files.
+The work log records whether this run was local or on Stokes.
+Git, transfer and Stokes evidence must be checked in that log.
+
+Problem 7
+Uploading the final Stokes-created tar.gz to Webcourses.
