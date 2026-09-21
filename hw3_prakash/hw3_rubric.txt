@@ -1,0 +1,37 @@
+Homework 3 - Problem 3 Rubric (20 points total)
+
+1. Function definition and arguments - 3 points
+   - Is the function named squareplot? (1 point)
+   - Does it have the three required positional arguments: low, high, and number of points? (1 point)
+   - Does it include the optional argument saveplot=False? (1 point)
+
+2. Construction of x array - 3 points
+   - Does the function create evenly spaced x values over the requested range? (2 points)
+   - Are both the low and high endpoints included? (1 point)
+
+3. Use of square function - 3 points
+   - Does squareplot call the previously written square function rather than duplicating the squaring operation? (2 points)
+   - Is square called exactly once? (1 point)
+
+4. Plot construction - 4 points
+   - Does the function correctly plot y versus x? (2 points)
+   - Is the horizontal axis labeled "Input"? (0.5 point)
+   - Is the vertical axis labeled "Output"? (0.5 point)
+   - Is the title exactly "Square Function"? (1 point)
+
+5. Optional plot saving - 3 points
+   - Does the function leave the plot unsaved when saveplot is False? (1 point)
+   - When saveplot is not False, does it use the user-provided filename rather than a hard-coded filename? (1 point)
+   - Is the saved plot a PDF? (1 point)
+
+6. Documentation and coding style - 2 points
+   - Does the function have a clear docstring describing parameters, behavior, and output? (1 point)
+   - Does the docstring contain at least one working example and is the code readable/well commented? (1 point)
+
+7. Main-program test - 2 points
+   - Is squareplot called so that the plotted x values are exactly 1, 2.5, 4, 5.5, and 7? (1 point)
+   - Is that plot saved using an appropriate filename? (1 point)
+
+Total: 20 points
+
+The assignment asks for the rubric to be submitted as either a .txt or .pdf file.
