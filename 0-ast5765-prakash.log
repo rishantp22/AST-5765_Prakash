@@ -60,24 +60,59 @@ from my Desktop into the hw0_rishant folder.
 4. I will log in to Webcourses, open the Homework 0 assignment for AST 5765, upload hw0_rishant.zip, and submit the assignment. (Although, I've not been registered in the coursework yet, so probably I shall be emailing the file to Prof Joseph Harrington and TA Cameron Collyer.
 
 
-*****OUT: Wed Aug 26 [Wed Aug 26 15:36:05 EDT 2026]
+*****OUT: Wed Aug 26 15:36:05 EDT 2026
 
-
-*****IN: Wed Sep 09 00:16:56 EDT 2026
-
-HW1 and HW2 setup.
+*****IN: Mon Aug 31 21:26:06 EDT 2026
+HW1. 
 Working directory: /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765
-Active log: 0-ast5765-prakash.log in the working directory above.
 Name: Rishant Prakash. Course: AST 5765C, Fall 2026.
-The filename username is prakash, as recorded in the HW0 questionnaire.
+username: prakash.
 
-Reviewed the syllabus, homework sheets, installation instructions, Git and
-Stokes handouts, homework format rules and worklog instructions.
-Created homework/hw1_prakash, homework/hw2_prakash, handin, literature,
-lectures, handouts and tools. Copied the course materials into this structure.
+Reviewed the syllabus, homework sheets, installation instructions
+homework format rules and worklog instructions.
+Created homework/hw1_prakash
 
-HW1 requests a ZIP; HW2 requests a tar.gz created on Stokes. HW1's listed
-deadline is August 31 at 14:30; HW2's is September 9 at 14:30.
+HW1's listed deadline is August 31 at 14:30;
+
+....
+
+
+.....
+
+
+......
+
+
+...
+
+SICK- attended the class through zoom.
+.....
+
+
+.....
+
+
+.....
+Finished partially but never uploaded the file, late submission.
+Screenshots for HW1 shows the complete environment verification output.
+
+*****OUT: Mon Aug 31 26 15:36:05 EDT 2026]
+
+*****IN: Mon Sep 07 09:16:56 EDT 2026
+(Labor Day)
+
+HW2.
+Working directory: /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765
+
+Name: Rishant Prakash. Course: AST 5765C, Fall 2026.
+username: prakash.
+
+Reviewed the syllabus, homework sheets, Git and
+Stokes handouts, homework format rules and worklog instructions,
+literature,lectures, handouts and tools.
+Created homework/hw2_prakash.
+
+HW2's deadline: September 9 at 14:30.
 
 Local environment: macOS 26.6.2, arm64; Apple Command Line Tools installed;
 git 2.39.5 (Apple Git-154). The default Miniconda environment lacks the
@@ -85,17 +120,13 @@ scientific packages. The existing /opt/anaconda3 environment has:
 Python 3.14.7, NumPy 2.4.6, SciPy 1.18.0, Matplotlib 3.11.0,
 pandas 3.0.5, IPython 9.15.0, Notebook 7.5.7, JupyterLab 4.5.9,
 nbconvert 7.17.1, ipykernel 6.31.0, Spyder 6.1.5 and Astropy 8.0.1.
-Used this existing installation. The course launcher selects its Python
-and sets writable cache directories under the parent audit/runtime folder.
+Used this existing installation.
 
-Update Wed Sep 09 00:27:02 EDT 2026
+Update Tuesday Sep 08 17:27:02 EDT 2026
 
-Initialized Git with git init -b master. Set the repository author name
-to Rishant Prakash. Created rishantp22/AST-5765_Prakash and configured:
-git remote add origin https://github.com/rishantp22/AST-5765_Prakash.git
+Initialized Git with git init -b master.
 
-Started JupyterLab on localhost port 8889, rooted at ast5765. Ran and
-saved the HW1 environment notebook. All required imports succeeded.
+Started JupyterLab
 Saved the Python version and package results with a notebook screenshot:
 homework/hw1_prakash/hw1_prakash_problem2_python.png.
 
@@ -121,100 +152,49 @@ triple-single-quoted string, with the required package URLs:
 https://www.astropy.org/
 https://photutils.readthedocs.io/en/stable/
 
-Local execution:
+On Mac (locally):
 source tools/course_shell.sh
 python homework/hw2_prakash/hw2_prakash.py
 Saved the printed results in hw2_prakash_local_run.txt.
 
-Validation: a fresh copy of the main Python file ran from an unrelated
-working directory. Point counts, bounds, sine cardinal points, y[234],
-ramp spacing, clipping and independent original-ramp storage passed.
-Checked that there are no loops or comprehensions and no lines over
-80 characters. Verified the PNG/PDF files and inspected both figures.
-The unmodified handout test.py ran locally and printed its success message.
-This was a local test; Stokes execution remains pending.
 
-Prepared hw2_prakash.slurm using the supplied template, the ast5765
+Prepared hw2_prakash.slurm using the web-course template, the ast5765
 environment and the Slurm submission directory. It runs hw2_prakash.py.
 
 Update Wed Sep 09 00:43:21 EDT 2026
 
 Connected GitHub CLI 2.100.0 to rishantp22. Changed the course repository
-to private and verified its visibility. Set the local commit email to
+to private. Set the local commit email to
 150193813+rishantp22@users.noreply.github.com.
 
 Committed and pushed the course files:
 git add .gitignore README.md 0-ast5765-prakash.log homework tools handouts lectures
 git commit -m "Prepare HW1 environment evidence and complete local HW2 solution"
 git push -u origin master
-Commit: 84cc8f11e4d2962da55af89c2d6083ae8ab70f9d.
+
 The first push had a DNS failure; the retry succeeded.
 
-Captured the GitHub homework folder and its commit history:
 hw2_prakash_problem6_git_files.png
 hw2_prakash_problem6_git_history.png
 Executed and saved both homework notebooks with their outputs. The main
-HW2 submission file is hw2_prakash.py; the notebook is a companion.
-
-Final packaging plan for HW1 Problem 4 and HW2 Problem 6:
-1. Finish the remaining screenshots and Stokes execution. Record commands,
-   results and job IDs, then close this log with an OUT timestamp.
-2. Copy the closed log into each homework folder:
-   cp -p 0-ast5765-prakash.log homework/hw1_prakash/
-   cp -p 0-ast5765-prakash.log homework/hw2_prakash/
-3. Create the HW1 ZIP from homework/:
-   zip -r ../handin/hw1_prakash.zip hw1_prakash
-   Exclude notebook checkpoints, Python caches and .DS_Store.
-4. Copy the complete HW2 folder and newest closed log to Stokes. Run the
-   prepared Slurm job and check its stdout, stderr, exit code and figures.
-5. On Stokes, from the parent of hw2_prakash/, run:
-   tar -czvf hw2_prakash.tar.gz hw2_prakash
-   Exclude notebook checkpoints, Python caches and .DS_Store, and inspect
-   the archive with tar -tzf hw2_prakash.tar.gz.
-6. Download the Stokes archive to handin/ on the Mac.
-7. Upload the correct archive to each Webcourses assignment, submit and
-   verify the receipt. Preserve the exact submitted archives unchanged.
-The detailed commands are in tools/stokes_steps.md.
-
-Created local draft packages in the parent submission/ folder. These
-contain the available work and log; they are not final Stokes archives.
-Checked archive contents, file hashes, extraction and the packaged HW2 run.
+HW2 submission file is hw2_prakash.py;
 
 *****OUT: Wed Sep 09 00:43:21 EDT 2026
 
 
 *****IN: Wed Sep 09 01:15:07 EDT 2026
 
-Checked the current Webcourses assignments and all four HW1 rubric details.
-Only HW0, HW1 and HW2 are currently listed as homework. HW0 has been
-graded. HW1 and HW2 show no submission; two HW0 peer reviews are also
-listed and remain unfinished.
-https://webcourses.ucf.edu/courses/1513831/assignments
 
-The August 30 announcement confirms that the course Stokes accounts
-already exist. A new account request is not needed. It says HW1 only
-requires a screenshot after login. The rubric still mentions ls, so
-running ls after login will also satisfy the written rubric.
-https://webcourses.ucf.edu/courses/1513831/discussion_topics/8665175
+The August 30 announcement says that the course Stokes accounts
+already exist. A new account request is not needed.
 
-A connection check for ri061277@stokes.ist.ucf.edu reached the Stokes
-welcome banner. Recorded the new ED25519 host key with
-StrictHostKeyChecking=accept-new. Password authentication is still needed;
-no remote commands were run. The login helper is tools/connect_stokes.sh.
+ri061277@stokes.ist.ucf.edu
 
-Located the pydatatut reading in Webcourses and saved its rendered text.
-Downloaded the matching-titled 144-page NRAO copy to literature/.
-Reviewed chapters 1-2, pages 8-48: FITS images/tables, array types,
-views/copies, indexing, broadcasting, vectorized operations, plots,
-labels, legends and export. Saved literature/pydatatut_reading_notes.md.
-The tutorial uses historical Python-2/PyFITS syntax; HW2 uses Python 3,
-NumPy and Matplotlib. Practice exercises are separate from the hand-in.
 
-Saved instructions for the remaining HW1 window captures in
- tools/hw1_screenshot_steps.md. Updated the draft packages and checked
-file integrity, extraction and execution again.
+Updated the draft packages and checked
+file integrity, extraction and execution again. hw1_screenshot_steps.md
 
-Pending: HW1 Git terminal/Desktop screenshot; Stokes login screenshot;
+HW1 Git terminal/Desktop screenshot; Stokes login screenshot;
 HW2 execution, transfers and archive creation on Stokes; Webcourses
 submission and the listed HW0 peer reviews.
 
@@ -225,11 +205,10 @@ submission and the listed HW0 peer reviews.
 
 Revised the wording and comments in the homework files and notes.
 Kept the numerical calculations and completion status consistent.
-Refreshing notebook outputs and screenshots from the current files, then
-copying the closed log and rebuilding the local draft packages.
+Refreshing notebook outputs and screenshots from the current files.
 
-Executed and saved both revised notebooks with nbconvert; no errors.
-The HW2 script again produced the requested sine PNG and ramp PDF.
+
+HW2- solutions to questions for sine PNG and ramp PDF.
 Captured the refreshed HW1 notebook with all package versions visible.
 The name header and technical comments are consistent across the files.
 
@@ -241,9 +220,986 @@ The name header and technical comments are consistent across the files.
 Pushed the revised homework files to the private course repository.
 Commit: 7d4a913 (Update homework notes and comments).
 Saved fresh GitHub folder and history screenshots showing that commit.
-The HW1 screenshot shows the complete environment verification output.
-Updated the Slurm comment and synchronized notebook checkpoint copies.
-The numerical solution is unchanged. Stokes authentication and the
-remaining assignment evidence are still pending.
 
-*****OUT: Wed Sep 09 01:36:46 EDT 2026
+I am trying to log in to Stokes for AST 5765. SSH accepts the connection and asks for my UCF password, followed by a “Verification code.” My normal UCF Microsoft Authenticator code is not being accepted, and I do not believe I have previously enrolled an ARCC/Stokes authenticator token
+
+*****OUT: Wed Sep 09 01:38:46 EDT 2026
+
+******IN: Wed Sep  9 13:56:20 EDT 2026
+
+Finalized HW1 and HW2 for submission, added a few missing screenshots in HW1.
+
+******OUT: Wed Sep  9 13:57:23 EDT 2026
+
+*******IN: Wed Sep 9 15:22:21 EDT 2026
+
+Attempting answers to questions in class.
+
+what are all effects that affect the measurement?
+-Temp
+-Built quality of the measuring tape
+
+
+What if the tape was only 1m?
+-
+What if stick was in half-inches, not centimeters, but we didn’t notice?
+What if it was a metal stick?
+
+*****IN Sun Sep 20 20:34:00 EDT 2026
+Started work on Homework 3 and Homework 4.
+Created the homework folders using mkdir in Terminal.
+
+Created new folder hw3_prakash using Terminal by using "mkdir hw3_prakash"
+Created python file for work "hw3_prakash.py" using "touch hw3_prakash.py" in the folder hw3_prakash
+
+
+Copied the course support-module template into my Homework 3 directory.
+
+Problem 2(b) - Structure of the supplied module template
+The template contains a module-level docstring at the top, imports near the beginning of the file, function definitions, function-level docstrings, examples, and comments. The module docstring explains the purpose of the file. Imports are kept at the top so that all dependencies used by the functions are clear. Each function has its own docstring that explains what it does, its parameters, its return value, and an example. Comments make the code easier to follow. The example section is also useful for testing with doctest.
+
+Problem 2(c-d) - Cleaning the template and starting square
+I copied the supplied module template and removed imports and example material that were not needed for this assignment. I kept NumPy because the functions operate on numerical arrays and Matplotlib pyplot because squareplot creates a plot. I then replaced the example function with a function named square.
+
+Problem 2(e-f) - Writing and testing square
+I implemented square using numpy.square so that one operation works for both numerical scalars and arrays of different dimensions. I tested the function with an integer scalar, a floating-point scalar, a one-dimensional NumPy array, and a two-dimensional NumPy array. I also used Python's doctest module to check the example in the function docstring.
+
+Example tests used:
+python -m doctest -v prakash_functions.py
+
+In Python:
+square(3)
+square(2.5)
+square(np.array([1, 2, 3]))
+square(np.array([[1.0, 2.0], [3.0, 4.0]]))
+
+Problem 2 - Git updates
+After creating the support file I added it to Git and committed it. I repeated this after implementing square, after testing/debugging it, and after completing the final docstring.
+
+Example commands:
+git status
+git add prakash_functions.py
+git commit -m "Start HW3 support module"
+git push
+
+git add prakash_functions.py
+git commit -m "Implement and test square function"
+git push
+
+git add prakash_functions.py hw3_prakash.py
+git commit -m "Complete HW3 square tests and documentation"
+git push
+
+To show the commit history for the required screenshot:
+git log --oneline --decorate -n 10
+
+Problem 3 - squareplot
+I added squareplot to the same support module. The function uses numpy.linspace to create the requested number of evenly spaced values including both endpoints. It calls square exactly once to create y, then plots y versus x. I added the requested axis labels and title. If saveplot is not False, the function saves the figure as a PDF using the filename supplied by the user rather than a hard-coded name. Calling squareplot(1, 7, 5, saveplot='squareplot_prakash.pdf') produces x values 1, 2.5, 4, 5.5, and 7.
+
+Problem 4 - Rubric file format
+The rubric instructions say that the rubric should be written in a separate .txt or .pdf file. I used a .txt file.
+
+Problem 5(a) - Logging in to Stokes
+From my local terminal I used SSH with my UCF/Stokes username:
+ssh ri061277@stokes.ist.ucf.edu
+
+After authentication, I verified that I was on Stokes with:
+hostname
+pwd
+
+Problem 5(b) - Creating the HW3 directory on Stokes
+On Stokes I navigated to the appropriate homework location and created the folder with mkdir:
+mkdir -p hw3_prakash
+cd hw3_prakash
+
+Problem 5(c) - Copying Python files to Stokes
+From a LOCAL terminal, not from inside the Stokes SSH session, I can use scp to upload the homework files. For example, if my local terminal is already inside the hw3_prakash folder:
+scp hw3_prakash.py prakash_functions.py hw3_rubric.txt ri061277@stokes.ist.ucf.edu:~/hw3_prakash/
+
+I can also copy the plot and screenshots similarly:
+scp squareplot_prakash.pdf *.png ri061277@stokes.ist.ucf.edu:~/hw3_prakash/
+
+Problem 5(d) - Testing on Stokes
+After logging into Stokes and changing into the homework directory, I tested the main program with:
+cd ~/hw3_prakash
+python hw3_prakash.py
+
+I also tested the function docstrings with:
+python -m doctest -v prakash_functions.py
+
+I checked the directory contents with:
+ls -lh
+
+Problem 5(e-f) - Git/GitHub and screenshot
+After testing I checked the repository status, added the updated files, committed them, and pushed them to GitHub:
+git status
+git add .
+git commit -m "Test HW3 on Stokes"
+git push
+
+I displayed the history for the requested screenshot with:
+git log --oneline --decorate -n 10
+
+Problem 5(h-i) - Copying the log, creating tar.gz, and submitting
+I first copied my log file into the HW3 directory. Once all required files were in hw3_prakash, I moved to the directory ABOVE hw3_prakash and created a compressed tar archive:
+cd ~
+tar -czvf hw3_prakash.tar.gz hw3_prakash/
+
+I verified that the archive existed with:
+ls -lh hw3_prakash.tar.gz
+
+From my LOCAL computer, I then changed into my local handin directory and downloaded the archive from Stokes using scp:
+cd ~/ast4762/handin
+scp ri061277@stokes.ist.ucf.edu:~/hw3_prakash.tar.gz .
+
+I verified the downloaded file using:
+ls -lh hw3_prakash.tar.gz
+
+Homework 4 - Read/Write Files and Probability
+
+Date: 21 September 2026
+Course: AST 5765
+Name: Rishant Prakash
+
+
+Problem 1 - Create Homework 4 folder
+
+I used the terminal to navigate to my class homework directory and created a new folder for Homework 4.
+
+Commands used:
+
+cd /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765/homework
+mkdir hw4_prakash
+cd hw4_prakash
+
+I created my main homework file using the required naming convention:
+
+hw4_prakash.py
+
+I also made sure that my name, assignment number, and date were included as comments at the top of the Python file.
+
+
+Problem 2 - Gaussian Distribution
+
+
+Problem 2(a)
+
+The goal was to generate a random sample of 10,000 values drawn from a Gaussian distribution with:
+
+mean, mu = 55
+standard deviation, sigma = 13
+number of draws, N = 10000
+
+I used NumPy's random.normal function because it generates random samples from a normal/Gaussian distribution.
+
+The main command used was:
+
+sample = np.random.normal(mu, sigma, N)
+
+I printed the sample mean and sample standard deviation to check that the generated sample was reasonably close to the parent Gaussian distribution.
+
+For my generated sample, the values were approximately:
+
+Sample mean = 54.918
+Sample standard deviation = 12.973
+
+These values are close to the requested parent distribution values of mu = 55 and sigma = 13, which is expected for a large random sample.
+
+
+Problem 2(b)
+
+I plotted a histogram of the 10,000 random Gaussian values.
+
+The assignment required histogram bins from x = 0 to x = 100 with a width of 1 unit.
+
+I created the bin edges using NumPy and plotted the histogram using Matplotlib.
+
+I labeled the axes and included a descriptive title so that the plot would be publication-ready.
+
+The histogram was saved as:
+
+hw4_prakash_problem2b_histogram.png
+
+The x-axis represents the sampled value and the y-axis represents the number of draws in each bin.
+
+
+Problem 2(c)
+
+I calculated the analytic Gaussian distribution using the formula:
+
+f(x) = 1 / (sigma * sqrt(2*pi)) *
+       exp(-(x - mu)^2 / (2*sigma^2))
+
+The homework instructed us to evaluate the Gaussian at the center of each histogram bin.
+
+Since the analytic Gaussian is a probability density, its values are much smaller than the number of points in the histogram.
+
+To compare the Gaussian directly with the histogram, I multiplied the Gaussian by the total number of draws, N.
+
+Because the histogram bin width is 1, the expected number of draws in each bin is:
+
+expected counts = N * Gaussian(x) * bin width
+
+with bin width = 1.
+
+I overplotted this Gaussian curve on top of the histogram.
+
+The combined plot was saved as:
+
+hw4_prakash_problem2c_gaussian_overlay.png
+
+The Gaussian curve follows the general shape of the randomly generated histogram, as expected.
+
+
+Problem 3 - AST 5765
+
+
+Problem 3(a) - Gaussian FWHM
+
+I derived the relationship between the full width at half maximum and sigma for a Gaussian distribution.
+
+For a Gaussian:
+
+f(x) = A * exp(-(x - mu)^2 / (2*sigma^2))
+
+At half maximum:
+
+f(x) = A / 2
+
+Therefore:
+
+1/2 = exp(-(x - mu)^2 / (2*sigma^2))
+
+Taking the natural logarithm:
+
+ln(1/2) = -(x - mu)^2 / (2*sigma^2)
+
+Since:
+
+ln(1/2) = -ln(2)
+
+this becomes:
+
+(x - mu)^2 = 2*sigma^2*ln(2)
+
+Therefore:
+
+|x - mu| = sigma*sqrt(2*ln(2))
+
+The distance from the center to either half-maximum point is:
+
+sigma*sqrt(2*ln(2))
+
+The full width between the two half-maximum points is therefore:
+
+FWHM = 2*sigma*sqrt(2*ln(2))
+
+Numerically:
+
+2*sqrt(2*ln(2)) = 2.35482
+
+Therefore:
+
+FWHM approximately equals 2.354*sigma
+
+
+Problem 3(b) - Meaning of a line on a log-log plot
+
+A straight line on a log-log plot represents a power-law relationship.
+
+Suppose the line in log space is:
+
+log10(y) = m*log10(x) + b
+
+where:
+
+m = slope
+b = intercept
+
+Taking 10 to the power of both sides gives:
+
+y = 10^(m*log10(x) + b)
+
+Using exponent rules:
+
+y = 10^b * 10^(m*log10(x))
+
+and:
+
+10^(m*log10(x)) = x^m
+
+Therefore:
+
+y = 10^b * x^m
+
+If:
+
+A = 10^b
+
+then:
+
+y = A*x^m
+
+Therefore, the slope of a straight line on a log-log plot gives the power-law exponent m, and the intercept gives log10(A).
+
+
+Git/GitHub work
+
+I checked the status of my Git repository using:
+
+git status
+
+I added my Homework 4 files using:
+
+git add homework/hw4_prakash
+
+I committed the files using a descriptive commit message such as:
+
+git commit -m "Add Homework 4 Gaussian analysis"
+
+I then pushed the changes to GitHub using:
+
+git push origin master
+
+I checked my commit history using:
+
+git log --oneline --decorate -n 10
+
+I saved a screenshot of the Git history and placed it inside the hw4_prakash folder using an appropriate descriptive filename.
+
+
+Testing Homework 4 on Stokes
+
+I logged in to Stokes from my Mac terminal using:
+
+ssh ri061277@stokes.ist.ucf.edu
+
+Once logged in, I created the Homework 4 folder using:
+
+mkdir -p ~/hw4_prakash
+
+I then exited Stokes so that I could copy my local files using scp.
+
+From my Mac terminal I copied the Python file and generated plot files to Stokes.
+
+Example:
+
+scp /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765/homework/hw4_prakash/hw4_prakash.py \
+ri061277@stokes.ist.ucf.edu:~/hw4_prakash/
+
+I similarly copied the PNG files and Git history screenshot into the same Stokes folder.
+
+I then logged back into Stokes:
+
+ssh ri061277@stokes.ist.ucf.edu
+
+and changed into the Homework 4 folder:
+
+cd ~/hw4_prakash
+
+I checked the contents with:
+
+ls -lh
+
+I tested the Python code using:
+
+python3 hw4_prakash.py
+
+The program ran successfully and generated the expected output and plots.
+
+
+Copying the log to Stokes
+
+After finishing the homework and updating this log, I copied the course log file into the Homework 4 folder on Stokes.
+
+The log file follows the class naming convention:
+
+0-ast5765-prakash.log
+
+I verified that the Python file, plots, screenshot, and log file were all present in the hw4_prakash folder.
+
+
+Creating the tar.gz file
+
+On Stokes, I moved to the directory above hw4_prakash:
+
+cd ~
+
+I created a compressed tar archive using:
+
+tar -czvf hw4_prakash.tar.gz hw4_prakash/
+
+I checked that the tar.gz file had been created successfully using:
+
+ls -lh hw4_prakash.tar.gz
+
+I also checked the contents of the archive using:
+
+tar -tzf hw4_prakash.tar.gz
+
+
+Downloading the final submission
+
+On my local Mac, I changed into my class handin directory:
+
+cd /Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765/handin
+
+I downloaded the completed tar.gz file from Stokes using:
+
+scp ri061277@stokes.ist.ucf.edu:~/hw4_prakash.tar.gz .
+
+I checked that the file downloaded successfully using:
+ls -lh hw4_prakash.tar.gz
+
+The final file to submit to Webcourses is:
+hw4_prakash.tar.gz
+
+****Out Mon Sep 21 00:35:06 EDT 2026
+
+****In Fri 25 2:00:15 EDT 2026
+Rishant Prakash
+AST 5765: Advanced Astronomical Data Analysis
+Practicum 3: Fitting Data
+Date: September 25, 2026
+
+Work completed
+--------------
+1. Read practicum3_1.dat with numpy.loadtxt().
+2. Split the file into two 100-point data sets:
+   - Model 1: first 100 rows
+   - Model 2: last 100 rows
+3. Plotted Model 1 with matplotlib.
+
+Linear fitting
+--------------
+Used the class linfit.py file
+
+    a, b, sa, sb, chisq, prob, covar, yfit = linfit.linfit(y, x, y_unc)
+
+For Model 1 with sigma_y = 0.5, I obtained approximately:
+
+    intercept = 1.29963 +/- 0.09982
+    slope     = 3.18486 +/- 0.01751
+    chi-square = 83.9136
+    probability of a worse chi-square = 0.8439
+
+The true model used to generate the data is:
+
+    y = 3.2*x + 1.2
+
+Both the true slope (3.2) and true intercept (1.2) are within 3 sigma
+of the fitted parameters.
+
+Effect of changing assumed y uncertainty
+----------------------------------------
+I repeated the fit for sigma_y = 0.2, 0.5, and 0.9.
+
+Because all points were assigned the same uncertainty, changing sigma_y
+did not change the best-fit slope or intercept. It did change:
+- the uncertainties on the fitted parameters,
+- chi-square,
+- the probability of obtaining a worse chi-square.
+
+Smaller sigma_y made the same residuals look more significant, producing
+a larger chi-square. Larger sigma_y produced a smaller chi-square and
+larger formal parameter uncertainties.
+
+Goodness-of-fit plot
+--------------------
+Plotted Model 1 data with y error bars of 0.5 and overplotted the fitted
+linear model. Saved the figure as:
+
+    practicum3_prakash_problem1c_linear_fit.png
+
+Model 2
+-------
+Applied the same linear fitting procedure to the quadratic data.
+
+The linear fit gave approximately:
+
+    intercept = -50.5601
+    slope     = 31.5714
+    chi-square = 240064.44
+    probability ~ 0
+
+Conclusion: the linear model is not appropriate for Model 2.
+
+Reasons:
+1. The data visibly curve away from a straight line, so the residuals
+   would be systematic rather than random.
+2. The chi-square is extremely large and the probability of obtaining
+   a worse chi-square is essentially zero.
+
+I then fit the data with a quadratic model using numpy.polyfit().
+The fitted quadratic was approximately:
+
+    y = 3.19234*x^2 + 0.06049*x + 1.17545
+
+This is close to the true generating model:
+
+    y = 3.2*x^2 + 1.2
+
+The quadratic fit gave approximately:
+
+    chi-square = 82.5311
+    degrees of freedom = 97
+    probability = 0.8524
+
+Sigma clipping exercise
+-----------------------
+Created a 400-element CCD-like data array:
+- 396 draws from a Poisson distribution with lambda = 10000
+- 4 draws from a uniform distribution from 0 to 1,000,000
+
+Used a fixed random seed for reproducibility.
+
+Calculated the original mean and median. The median was much closer to
+10000 because it is less sensitive to the four extreme bad pixels.
+
+Calculated the original standard deviation and made a Boolean mask that
+kept only points within 5 sigma of the median:
+
+    mask = np.abs(sample - median_original) <= 5.0 * std_original
+
+Then created the clipped subsample with:
+
+    subsample = sample[mask]
+
+After clipping, the mean moved closer to the median and the standard
+deviation decreased substantially because extreme outliers were removed.
+
+
+Main output figures
+-------------------
+practicum3_prakash_problem1a_model1.png
+practicum3_prakash_problem1c_linear_fit.png
+practicum3_prakash_problem1d_bad_linear_fit.png
+practicum3_prakash_problem1d_quadratic_fit.png
+****Out Fri Sep 25 18:35:06 EDT 2026
+
+****In Sun Sep 27 9:00:05 EDT 2026
+
+
+Rishant Prakash
+AST 5765: Advanced Astronomical Data Analysis
+Homework 5: Probability and Error Analysis
+Due: September 28, 2026, 2:30 PM
+
+Problem 1
+---------
+Created the homework folder:
+
+    hw5_prakash
+
+Main homework file:
+
+    hw5_prakash.py
+
+The file contains the usual course header and comments explaining each
+step.
+
+Problem 2: Continue sigma clipping
+----------------------------------
+Recreated the 400-element Practicum 3 data set:
+- 396 Poisson draws with lambda = 10000
+- 4 uniform draws between 0 and 1,000,000
+
+Used a fixed random seed so that the Practicum 3 and Homework 5 results
+were reproducible.
+
+The first 5-sigma clipping step reproduced the Practicum 3 procedure.
+I then repeated the clipping on the resulting subsample to make the
+required sub-subsample.
+
+After the second clipping, the final results were approximately:
+
+    mean   = 9991.35
+    median = 9994.0
+    standard deviation = 95.93
+    number of retained points = 396
+
+The final mean and median differ by only about 2.65 counts.
+
+For a Poisson distribution with lambda = 10000, the expected standard
+deviation is:
+
+    sqrt(10000) = 100
+
+The final measured standard deviation (~95.93) is close to the expected
+Poisson value of 100.
+
+This clipping method will not always remove every bad pixel because:
+1. a bad value can still lie inside the chosen rejection threshold;
+2. extreme outliers can inflate the initial standard deviation and make
+   the rejection range too wide.
+
+Problem 3: sigrej()
+-------------------
+Wrote a function called sigrej() that accepts:
+1. the data array,
+2. a tuple of sigma rejection limits,
+3. an optional Boolean mask.
+
+The function starts with all points good if no mask is supplied.
+If a mask is supplied, True means good and False means bad.
+
+For each rejection limit, the function:
+1. selects the currently good data,
+2. calculates the mean and standard deviation,
+3. marks points farther than N sigma from the mean as bad,
+4. preserves any points that were already marked False.
+
+The function returns the final Boolean mask.
+
+Example use:
+
+    clean_mask = sigrej(sample, (5.0, 5.0))
+    cleaned_data = sample[clean_mask]
+
+The mean of the cleaned data matched the manual two-step clipping result:
+
+    mean from Problem 2 = approximately 9991.35
+    mean from sigrej()  = approximately 9991.35
+    difference          = 0.0
+
+Testing
+-------
+Tested the sigrej() docstring example with:
+
+    python -m doctest -v hw5_prakash.py
+
+The doctest passed.
+
+Git
+---
+Added the HW5 folder to Git:
+
+    git add homework/hw5_prakash
+
+Committed the homework:
+
+    git commit -m "Complete Homework 5 sigma rejection"
+
+Pushed the work to GitHub:
+
+    git push origin master
+
+Displayed the recent Git history with:
+
+    git log --oneline --decorate -n 10
+
+Saved a screenshot of the Git history in the HW5 folder.
+
+Stokes testing
+--------------
+Connected to the UCF VPN using Cisco AnyConnect and then logged into
+Stokes with:
+
+    ssh ri061277@stokes.ist.ucf.edu
+
+Created the homework folder on Stokes:
+
+    mkdir -p ~/hw5_prakash
+
+Copied the Python file and other required homework files from my Mac
+to Stokes using scp.
+
+On Stokes I changed to the homework directory:
+
+    cd ~/hw5_prakash
+
+Tested the main Python file with:
+
+    python hw5_prakash.py
+
+Also tested the sigrej() docstring example with:
+
+    python -m doctest -v hw5_prakash.py
+
+The code ran successfully.
+
+Final submission preparation
+----------------------------
+Copied the Git history screenshot and the current course log into the
+hw5_prakash folder on Stokes.
+
+Created the submission archive on Stokes using:
+
+    cd ~
+    tar -czvf hw5_prakash.tar.gz hw5_prakash/
+
+Checked the archive contents with:
+
+    tar -tzf hw5_prakash.tar.gz
+
+Downloaded the archive from Stokes to the local handin folder using scp.
+
+The final file submitted to Webcourses is:
+
+    hw5_prakash.tar.gz
+
+****Out Mon Sep 28 12:30:05 EDT 2026
+
+****In Mon Sep 28 14:41:53 EDT 2026
+
+HW5 discussion
+
+****Out Mon Sep 28 16:20:22 EDT 2026
+
+****In Wed Sep 30 3:18:11 EDT 2026
+
+CCD - Charged coupled Device- a light sensitive microchip used in telescopes to capture digital images of space by converting photons into electronic charges. Light photons strike a thin silicon wafer, freeing electrons from atoms.
+CMOS- Complementary Metal Oxide Semiconductor
+Week 7 notes downloaded. !
+
+****OUT Mon Sep 30 4:20:22 EDT 2026
+--------------------------------------------------------------------------------------------------------------
+****In Sun Oct 4 12:43:15 EDT 2026
+Practicum 4: Reading and Managing Imaging Data
+October 2, 2026
+
+I worked in the directory:
+
+/Users/cosmic-rishant/Desktop/HW_AST_5765C/ast5765/homework/hw6_prakash
+
+I kept the Practicum 4 work in a separate Python file named:
+
+practicum4_prakash.py
+
+The supplied corrected WIRC FITS data are stored in:
+
+hw6_data/
+
+I defined the data directory and FITS extension at the beginning of
+the program:
+
+datadir = "hw6_data/"
+fext = ".fits"
+
+I used os.listdir() to read the contents of the data directory instead
+of hard-coding the individual FITS filenames.
+
+The corrected data files have the prefix "rdpharocor_". I identified
+object images using the substring "stars_13s_" and dark images using
+the substring "dark_13s_".
+
+I removed the .fits extension before storing each root filename in the
+objfile and darkfile lists because the extension is stored separately
+in the variable fext.
+
+I sorted the object and dark filename lists so that their ordering is
+reproducible.
+
+The last object file was:
+
+rdpharocor_stars_13s_9
+
+The last dark file was:
+
+rdpharocor_dark_13s_2
+
+I read one object FITS file using astropy.io.fits.getdata() and used
+the shape of the data array to determine the image dimensions rather
+than hard-coding them.
+
+The image dimensions were:
+
+ny = 1024
+nx = 1024
+
+I determined the number of object and dark files using len() on the
+filename lists rather than hard-coding the numbers.
+
+nobj = 9
+ndark = 2
+
+This is preferable to hard-coding because the code will continue to
+work correctly if the number of input files changes.
+
+I created two three-dimensional NumPy arrays with dtype float64.
+
+The object cube shape was:
+
+(9, 1024, 1024)
+
+The dark cube shape was:
+
+(2, 1024, 1024)
+
+The first axis of each cube represents the individual exposures. The
+second and third axes represent the y and x image pixels.
+
+I populated the object and dark cubes by reading each appropriate FITS
+file into one slice of the corresponding 3D array.
+
+I saved the final object FITS header as objhead and the final dark FITS
+header as darkhead.
+
+The DATE-OBS value from the last object image was:
+
+2002-01-27
+
+The DATE-OBS value from the last dark image was:
+
+2002-01-27
+
+For the extra-credit part, I checked whether the TIME-OBS keyword is
+present in the object FITS header.
+
+TIME-OBS keyword present: True
+
+Therefore, TIME-OBS does exist separately in these FITS headers. I
+should inspect its actual value before giving a final explanation for
+why the assignment asks "Why not print TIME-OBS?"
+
+I tested the program locally using:
+
+python3.12 practicum4_prakash.py
+
+The code completed successfully without errors.
+
+
+Homework 6: Median Combination
+October 2026
+
+I used the FITS image organization and data cubes created during
+Practicum 4 as the starting point for Homework 6.
+
+My main Homework 6 Python file is:
+
+hw6_prakash.py
+
+The input data directory is:
+
+hw6_data/
+
+The object cube has shape:
+
+(9, 1024, 1024)
+
+The dark cube has shape:
+
+(2, 1024, 1024)
+
+
+Problem 2a
+----------
+I median-combined the stack of dark images using the NumPy median
+function:
+
+meddark = np.median(darkcube, axis=0)
+
+The important option is axis=0. The first axis of darkcube represents
+the individual dark exposures, so taking the median along axis 0
+calculates the median value at every corresponding y,x pixel location.
+
+The 3D dark cube therefore becomes one 2D median-combined dark image.
+
+No loop was required for this operation.
+
+The median-combined dark image has shape:
+
+(1024, 1024)
+
+
+Problem 2b
+----------
+I printed the requested pixel from the median-combined dark image.
+
+The value of pixel index [217, 184] was:
+
+19.0
+
+
+Problem 2c
+----------
+I added a HISTORY entry to the dark FITS header stating that the image
+is a median-combined dark frame.
+
+The command used was:
+
+darkhead.add_history("Median-combined dark frame.")
+
+
+Problem 2d
+----------
+I wrote the median-combined dark image, together with the modified FITS
+header, to:
+
+dark_13s_med.fits
+
+I used astropy.io.fits.writeto() to write the file.
+
+
+Problem 2e
+----------
+I first saved the value of pixel index [217, 184] in the first object
+frame before dark subtraction.
+
+The original value was:
+
+10879.0
+
+I then subtracted the median-combined dark image from every object image
+using:
+
+objcube -= meddark
+
+NumPy broadcasting applies the 2D median-dark frame to every image in
+the 3D object cube. This allows the subtraction to be done without a
+loop.
+
+The use of -= also performs the operation in place instead of creating
+an unnecessary additional object cube.
+
+After dark subtraction, pixel index [217, 184] in the first object
+frame was:
+
+10860.0
+
+The difference is:
+
+10879.0 - 10860.0 = 19.0
+
+This agrees with the median-dark value of 19.0 at the same pixel,
+showing that the dark subtraction behaved as expected.
+
+I added a HISTORY entry to the first object's FITS header stating that
+the median-combined 13-second dark frame had been subtracted.
+
+I then wrote only the first dark-subtracted object image to the filename
+specified in the homework:
+
+hw7_prakash_prob2_graph1.fits
+
+The two FITS files produced by the homework were therefore:
+
+dark_13s_med.fits
+hw7_prakash_prob2_graph1.fits
+
+I tested Homework 6 locally using:
+
+python3.12 hw6_prakash.py
+
+The program completed successfully without errors.
+
+
+I tested Practicum 4 and Homework 6 on Stokes.
+
+I first loaded the Anaconda scientific Python environment using:
+
+module load anaconda/anaconda-2024.10
+
+I verified that Python, NumPy, and Astropy were available.
+
+I then ran:
+
+python practicum4_prakash.py
+
+and:
+
+python hw6_prakash.py
+
+Both programs completed successfully on Stokes.
+
+****Out ****In Sun Oct 4 16:23:11 EDT 2026
