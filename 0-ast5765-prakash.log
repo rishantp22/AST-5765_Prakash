@@ -1202,4 +1202,388 @@ python hw6_prakash.py
 
 Both programs completed successfully on Stokes.
 
-****Out ****In Sun Oct 4 16:23:11 EDT 2026
+****Out Sun Oct 4 16:23:11 EDT 2026
+
+****In Wed Oct 7 14:36:56 EDT 2026
+HW 6 discussion
+
+Broadcasting- it takes like one line to code. Easier to write and easy to debug. 
+
+Working as a team with Zeina and Ishita.
+In class Q- Is the moon made of cheese? Maybe. 
+Why is it important to figure out?
+So that we can know the origin of moon and their samples where they came from which will us the clues on how moons of other celestial bodies made of.
+
+Possible competing ideas?
+
+It's important to figure out the idea is right?. Artemis 3 mission to re-verify apollo samples. We have to test the chemical composition. It might be affecting the lunar atmosphere. 
+Since landing would be difficult on cheesy surface, we need to build robotic arms for sample return mission and at the same time we 
+
+How can you figure out which idea is right?
+Age of the cheese, is it moldy (the dark parts of the moon)
+
+***In Sat Oct 10 12:20:12 EDT 2026
+Rishant Prakash
+AST 5765
+Homework 7 - Problem 2
+Literature overview: HD 189733b
+
+
+Paper 1
+Knutson et al. (2007)
+"A map of the day-night contrast of the extrasolar planet HD 189733b"
+
+Knutson et al. studied the hot Jupiter HD 189733b to understand how efficiently its atmosphere redistributes heat from the permanently illuminated dayside to the
+nightside. Using the 8 μm channel of the Spitzer Space Telescope, they monitored the system for more than half an orbit and measured changes in infrared brightness as
+different parts of the planet rotated into view. They found that the planet’s hemisphere-averaged brightness temperature varied from about 973 K to 1212 K, indicating a
+relatively small day-night temperature contrast and therefore efficient heat transport through the atmosphere. The brightest region was also shifted eastward from the
+substellar point, showing that atmospheric winds move the hottest region away from the point receiving the most direct stellar radiation. Overall, the study showed that infrared
+phase curves can be used to infer large-scale atmospheric circulation and temperature structure on exoplanets that cannot be directly resolved.
+
+Paper 2
+Charbonneau et al. (2008)
+"The Broadband Infrared Emission Spectrum of the Exoplanet HD 189733b"
+
+Charbonneau et al. used secondary-eclipse observations from the Spitzer Space Telescope to measure the dayside infrared emission of the hot Jupiter HD 189733b at
+wavelengths from 3.6 to 24 μm. By comparing the planet-to-star flux ratios across several infrared bands, they found that the planet’s spectrum is not consistent with
+simple blackbody radiation. The unusually strong emission near 3.6–4 μm is interpreted as radiation escaping through a region of relatively low atmospheric opacity, while the
+lower emission between about 4.5 and 8 μm is consistent with molecular absorption, particularly from water vapor. Their atmospheric models favor a temperature structure
+without a high-altitude thermal inversion, unlike the more strongly irradiated hot Jupiter HD 209458b. Overall, the study showed that broadband secondary-eclipse
+measurements can reveal the temperature structure, molecular absorption, and energy transport within exoplanet atmospheres.
+
+
+Paper 3
+Evans et al. (2013)
+"The Deep Blue Color of HD 189733b"
+
+Evans et al. used Hubble Space Telescope observations of the secondary eclipse of HD 189733b to measure how much visible light the planet reflects and therefore determine
+its color and atmospheric properties. They found that the geometric albedo is relatively high at blue wavelengths, about 0.40 between 290 and 450 nm, but drops to below 0.12
+between 450 and 570 nm, indicating that the planet would appear deep blue. The authors interpret this strong wavelength dependence as evidence for reflective clouds
+or haze that efficiently scatter short-wavelength light, while absorption, particularly from sodium at longer visible wavelengths, reduces the reflected signal toward the red. Their
+simple atmospheric models suggest that clouds located at intermediate altitudes can reproduce the observed albedo trend, showing that visible-light secondary eclipses can
+provide constraints on the scattering particles, absorbers, and vertical cloud structure of hot-Jupiter atmospheres.
+
+
+Paper 4
+Zhang et al. (2024)
+"Retrievals on NIRCam transmission and emission spectra of HD 189733b with PLATON 6"
+
+Zhang et al. used JWST/NIRCam transmission and emission spectra of the hot Jupiter HD 189733b to better constrain its atmospheric composition and thermal structure.
+Using an updated version of the PLATON retrieval code, they found that the atmosphere has a metallicity of several times the solar value and a C/O ratio of about 0.4, with
+broadly consistent results from both transit and eclipse observations. The spectra show strong evidence for water, carbon dioxide, carbon monoxide, and hydrogen sulfide,
+while methane appears depleted at the terminator, possibly because of photochemistry or atmospheric mixing. The emission data also provide tentative evidence for a weak
+thermal inversion at low pressures on the dayside. In addition to these atmospheric results, the paper introduces PLATON 6, which includes GPU acceleration and improved
+opacity and retrieval capabilities designed for JWST-quality observations. Overall, the study demonstrates how JWST can provide much tighter constraints on exoplanet
+atmospheres while also showing that some inferred properties, especially C/O ratio, remain sensitive to model assumptions.
+
+***OUT Sun Oct 11 10:26:10 EDT 2026
+
+
+***IN Sun Oct 11 17:28:22 EDT 2026
+Homework 7: Fitting Data and Scientific Data Presentation
+October 2026
+
+I worked in the directory:
+
+/Users/cosmic-rishant/Library/CloudStorage/OneDrive-UniversityofCentralFlorida/UCF/UCF_PhD_coursework/Sem_1/Adv Data Analysis/ast5765/homework/hw7_prakash
+
+My main homework file is:
+
+hw7_prakash.py
+
+The input data file is:
+
+hw7_synthetic_transit_lightcurve.csv
+
+
+Problem 2
+---------
+I read the four assigned papers about HD 189733b and wrote my own
+1-2 paragraph overview of each paper in:
+
+hw7_prakash_problem2_literature.txt
+
+I did not use AI to write these summaries, following the assignment
+instructions.
+
+Problem 3a
+----------
+I read the synthetic transit light curve from:
+
+hw7_synthetic_transit_lightcurve.csv
+
+using NumPy.
+
+The dataset contains 500 observations spanning:
+
+-0.05 to +0.05 days.
+
+I plotted normalized flux as a function of observational time and saved
+the publication-ready figure as:
+
+hw7_prakash_problem3a_transit.png
+
+
+Problem 3b(i)
+-------------
+I wrote a function called box_window() to represent the transit as a
+rectangular window.
+
+The function takes observational time, transit center, transit width,
+and fractional transit depth as input.
+
+Outside the transit the normalized model flux is 1.0, and inside the
+transit the flux is:
+
+1.0 - depth
+
+
+Problem 3b(ii)
+--------------
+I fit the synthetic transit data using scipy.optimize.curve_fit().
+
+The fitted properties were approximately:
+
+center = 0.0000 days
+width = 0.0200 days
+fractional transit depth = 0.00978652
+
+The hard-edged rectangular model is discontinuous, so curve_fit does not
+provide a very robust optimization of the center and width. However,
+inspection of the data shows that the transit extends approximately from
+-0.00992 to +0.00992 days, independently confirming a center near zero
+and a full width of approximately 0.020 days.
+
+I estimated the observational uncertainty using the standard deviation
+of the out-of-transit measurements:
+
+sigma_flux = 0.00052516
+
+The goodness-of-fit statistics were:
+
+chi-square = 482.027
+degrees of freedom = 497
+reduced chi-square = 0.9699
+probability of obtaining a worse chi-square = 0.6767
+
+The reduced chi-square is close to 1 and the probability is not small,
+so the rectangular model provides an acceptable fit to this synthetic
+dataset.
+
+For real observations, if the box model produced a poor fit I would
+inspect the residuals and uncertainties and use a more realistic
+transit model that includes ingress, egress, and stellar limb darkening.
+
+
+Problem 3b(iii)
+---------------
+The transit depth is related to the stellar and planetary radii by:
+
+depth = (Rp / Rstar)^2
+
+Therefore:
+
+Rp = Rstar * sqrt(depth)
+
+Using:
+
+Rstar = 1.14 R_sun
+
+and:
+
+depth = 0.00978652
+
+I obtained:
+
+Rp = 0.11278 R_sun
+
+
+Problem 3b(iv)
+--------------
+I plotted the observations together with the best-fit rectangular
+transit model and saved the publication-ready figure as:
+
+hw7_prakash_problem3b_fit.png
+
+
+Problem 3c
+----------
+The assignment specifies:
+
+sigma_Rstar = 0.01 R_sun
+sigma_depth = 0.002
+
+For:
+
+Rp = Rstar * sqrt(depth)
+
+I propagated the independent uncertainties using:
+
+sigma_Rp =
+sqrt[
+    (sqrt(depth) * sigma_Rstar)^2
+    +
+    (Rstar / (2 * sqrt(depth)) * sigma_depth)^2
+]
+
+The resulting uncertainty was:
+
+sigma_Rp = 0.01157 R_sun
+
+Therefore my final planetary radius is:
+
+Rp = 0.11278 +/- 0.01157 R_sun
+
+or, with appropriate rounding:
+
+Rp = 0.113 +/- 0.012 R_sun
+
+
+Local testing
+-------------
+My original system Python environment contained incompatible versions
+of NumPy and SciPy. To avoid modifying the system installation, I
+created a Python virtual environment in the HW7 folder and installed
+compatible scientific Python packages.
+
+I activated the environment and verified:
+
+NumPy 1.26.4
+SciPy 1.11.4
+
+I then ran:
+
+python hw7_prakash.py
+
+The program completed successfully without errors.
+
+Problem 3b(i)
+-------------
+I wrote a function called box_window() to represent a rectangular
+transit.
+
+The function accepts:
+
+1. observational time,
+2. center of the transit,
+3. full transit width,
+4. fractional transit depth.
+
+Outside the transit the normalized flux is 1. Inside the transit the
+model flux is 1 - depth.
+
+
+Problem 3b(ii)
+--------------
+I used scipy.optimize.curve_fit() to fit the rectangular transit model
+to the synthetic observations.
+
+My initial estimates were:
+
+center = 0.0 days
+width = 0.02 days
+depth = 0.01
+
+The best-fit parameters were approximately:
+
+center = 0.0000 days
+width = 0.0200 days
+fractional transit depth = 0.0097865
+
+I estimated the observational scatter from the out-of-transit data.
+
+The fit statistics were approximately:
+
+chi-square = 482.0
+degrees of freedom = 497
+reduced chi-square = 0.970
+probability of obtaining a worse chi-square = 0.677
+
+The reduced chi-square is close to 1 and the probability is not small,
+so the simple box model is consistent with the scatter in this synthetic
+dataset.
+
+For a poor fit, I would inspect the residuals and uncertainties and
+replace the simple box with a more realistic transit model that includes
+finite ingress/egress and stellar limb darkening if necessary.
+
+
+Problem 3b(iii)
+---------------
+I calculated the planet radius from the transit depth using:
+
+depth = (Rp / Rstar)^2
+
+therefore:
+
+Rp = Rstar * sqrt(depth)
+
+Using:
+
+Rstar = 1.14 R_sun
+
+and the fitted depth:
+
+depth = 0.0097865
+
+I obtained:
+
+Rp = approximately 0.1128 R_sun
+
+
+Problem 3b(iv)
+--------------
+I plotted the observed data together with the best-fit rectangular
+transit model.
+
+The figure was saved as:
+
+hw7_prakash_problem3b_fit.png
+
+
+Problem 3c
+----------
+I propagated the uncertainty in stellar radius and fractional transit
+depth.
+
+I used:
+
+stellar radius uncertainty = 0.01 R_sun
+fractional depth uncertainty = 0.002
+
+For:
+
+Rp = Rstar * sqrt(depth)
+
+the propagated uncertainty is:
+
+sigma_Rp =
+sqrt[
+    (sqrt(depth) * sigma_Rstar)^2
+    +
+    (Rstar / (2 * sqrt(depth)) * sigma_depth)^2
+]
+
+I obtained approximately:
+
+Rp = 0.1128 +/- 0.0116 R_sun
+
+or, rounded appropriately:
+
+Rp = 0.113 +/- 0.012 R_sun
+
+
+Local testing
+-------------
+I tested the code using:
+
+python3.12 hw7_prakash.py
+
+The script completed successfully and produced both requested plots.
+
+
+
+
+
+***OUT Mon Oct 12 13:06:47 EDT 2026
+
